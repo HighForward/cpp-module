@@ -4,10 +4,11 @@ class Contact
     /* method */
         Contact();
         ~Contact();
-        void get_infos(std::string temp[11]);
+        void get_infos(std::string temp[12]);
         void print_infos();
+        void print_indexinfos();
 
     private:
     /* attributs */
-    std::string info[11];
+    std::string info[12];
 };

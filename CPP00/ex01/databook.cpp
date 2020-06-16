@@ -31,12 +31,15 @@ void print_indexbook(Contact contact[8], int x)
     std::cout << "Select index to get more informations" << std::endl;
     std::getline(std::cin, nb);
 
-    for (int i = 0 ; i < nb.size() ; i++)
-        index = index * 10 + (nb[i] - 48);
-    if (index < 0 || index > 7 || index >= x || x == 0)
-        std::cout << "Sorry, this index do not exists" << std::endl;
-    else
-        contact[index].print_indexinfos();
+    if (nb.size() > 0)
+    {
+        for (size_t i = 0; i < nb.size(); i++)
+            index = index * 10 + (nb[i] - 48);
+        if (index < 0 || index > 7 || index >= x || x == 0)
+            std::cout << "Sorry, this index do not exists" << std::endl;
+        else
+            contact[index].print_indexinfos();
+    }
 }
 
 void handle_stdin(Contact& contact, int i)

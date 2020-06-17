@@ -4,19 +4,19 @@
 
 int main(void)
 {
-    Weapon *knife = new Weapon();
-    HumanA denis("Denis", knife);
+    Weapon knife;
+    HumanA denis("Denis", &knife);
 
-    knife->setType("Huntman");
+    knife.setType("Huntman");
     denis.attack();
-    knife->setType("Karambit");
+    knife.setType("Karambit");
     denis.attack();
 
     HumanB daniel("Daniel");
-    Weapon *rifle = new Weapon("AK47");
+    Weapon rifle("AK47");
 
-    daniel.setWeapon(rifle);
+    daniel.setWeapon(&rifle);
     daniel.attack();
-    rifle->setType("M4A1");
+    rifle.setType("M4A1");
     daniel.attack();
 }

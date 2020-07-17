@@ -47,7 +47,7 @@ void handle_stdin(Contact& contact, int i)
     std::string temp[12];
     std::string field[] = { "first name", "last name", "nickname", "login",
                             "postal address", "email address", "phone number", "birthday date",
-                            "favorite meal", "underwear color", "darkest secret"};
+                            "favorite meal", "underwear color", "darkest secret" };
     temp[0] = std::to_string(i);
 
     for (int x = 1 ; x < 12 ; x++)

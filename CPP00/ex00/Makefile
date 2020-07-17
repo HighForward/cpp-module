@@ -1,11 +1,11 @@
 SRCS		=   megaphone.cpp
 
 NAME        =   megaphone
-FLAGS      = -Wall -Wextra -Werror
-OBJS		= $(SRCS:%.cpp=%.o)
-CC			= clang++
-RM			= rm -f
-CFLAGS		= -Wall -Wextra -Werror
+FLAGS       =   -Wall -Wextra -Werror
+OBJS		=   $(SRCS:%.cpp=%.o)
+CC			=   clang++
+RM			=   rm -f
+CFLAGS		=   -Wall -Wextra -Werror
 
 $(NAME):	${OBJS}
 			@${CC} ${FLAGS} -o $(NAME) ${OBJS}

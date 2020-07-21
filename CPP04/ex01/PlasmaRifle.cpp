@@ -1,13 +1,13 @@
 #include "PlasmaRifle.hpp"
 
-PlasmaRifle::PlasmaRifle(std::string const &name, int apcost, int damage) : AWeapon(name, apcost, damage)
+PlasmaRifle::PlasmaRifle() : AWeapon("Plasma Rifle", 21, 5)
 {
-    std::cout << "Constructor" << std::endl;
+
 }
 
 PlasmaRifle::~PlasmaRifle()
 {
-    std::cout << "Destructor" << std::endl;
+
 }
 
 void PlasmaRifle::attack() const

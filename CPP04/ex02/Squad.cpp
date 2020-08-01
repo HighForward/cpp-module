@@ -11,21 +11,37 @@ Squad::~Squad()
     for (int x = 0; x < getCount(); x++)
         delete squad[x];
     delete[] squad;
+    squad = NULL;
 }
 
-Squad::Squad(const Squad &copy)
+Squad::Squad(const ISquad &copy)
 {
-    std::cout << "Copy constructor" << std::endl;
-    *this = copy;
+    int x = 0;
+    squad = new ISpaceMarine*[copy.getCount() + 1];
+
+    while (x < copy.getCount())
+    {
+        squad[x] = copy.getUnit(x)->clone();
+        x++;
+    }
+//    *this = copy;
 }
 
-Squad &Squad::operator=(const Squad &copy)
+Squad &Squad::operator=(const ISquad &copy)
 {
-    std::cout << "Assignation operator" << std::endl;
-    //if (this != &copy)
-    //{
-    //what u want
-    //}
+    if (this != &copy)
+    {
+        if (this->getCount() > 0)
+        {
+            for (int i = 0; i < this->getCount(); i++)
+                delete squad[i];
+            delete squad;
+        }
+        squad = new ISpaceMarine*[copy.getCount() + 1];
+        for (int x = 0; x < copy.getCount(); x++)
+            squad[x] = copy.getUnit(x)->clone();
+        squad[copy.getCount()] = NULL;
+    }
     return (*this);
 }
 

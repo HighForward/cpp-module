@@ -10,15 +10,12 @@ class Squad : public ISquad
     public:
         Squad();
         virtual ~Squad();
-        Squad(const Squad &copy);
-        Squad &operator=(const Squad &copy);
+        Squad(const ISquad &copy);
+        Squad &operator=(const ISquad &copy);
 
         virtual int getCount() const;
         virtual ISpaceMarine* getUnit(int) const;
         virtual int push(ISpaceMarine*);
-
-    private:
-        ISpaceMarine** squad;
 };
 
 #endif

@@ -12,13 +12,13 @@ TacticalMarine::~TacticalMarine()
 
 TacticalMarine::TacticalMarine(const TacticalMarine &copy)
 {
-    std::cout << "Copy constructor" << std::endl;
+//    std::cout << "Copy constructor" << std::endl;
     *this = copy;
 }
 
 TacticalMarine &TacticalMarine::operator=(const TacticalMarine &copy)
 {
-    std::cout << "Assignation operator" << std::endl;
+//    std::cout << "Assignation operator" << std::endl;
     //if (this != &copy)
     //{
     //what u want
@@ -28,7 +28,7 @@ TacticalMarine &TacticalMarine::operator=(const TacticalMarine &copy)
 
 ISpaceMarine* TacticalMarine::clone() const
 {
-
+    return (new TacticalMarine(*this));
 }
 
 void TacticalMarine::battleCry() const

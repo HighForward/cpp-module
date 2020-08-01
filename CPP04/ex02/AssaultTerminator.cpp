@@ -12,13 +12,13 @@ AssaultTerminator::~AssaultTerminator()
 
 AssaultTerminator::AssaultTerminator(const AssaultTerminator &copy)
 {
-    std::cout << "Copy constructor" << std::endl;
+//    std::cout << "Copy constructor" << std::endl;
     *this = copy;
 }
 
 AssaultTerminator &AssaultTerminator::operator=(const AssaultTerminator &copy)
 {
-    std::cout << "Assignation operator" << std::endl;
+//    std::cout << "Assignation operator" << std::endl;
     //if (this != &copy)
     //{
     //what u want
@@ -28,7 +28,7 @@ AssaultTerminator &AssaultTerminator::operator=(const AssaultTerminator &copy)
 
 ISpaceMarine* AssaultTerminator::clone() const
 {
-
+    return (new AssaultTerminator(*this));
 }
 
 void AssaultTerminator::battleCry() const

@@ -9,7 +9,11 @@ Character::Character(std::string name)
 
 Character::~Character()
 {
-    std::cout << "Destructor" << std::endl;
+    for (int x = 0; x < 4; x++)
+    {
+        if (materia[x] != NULL)
+            delete (materia[x]);
+    }
 }
 
 Character::Character(const Character &copy)
@@ -20,20 +24,28 @@ Character::Character(const Character &copy)
 //
 Character &Character::operator=(const ICharacter &copy)
 {
-    std::cout << "Assignation operavvvtor" << std::endl;
     if (this != &copy)
     {
         this->_name = copy.getName();
         for (int x = 0; x < 4; x++)
         {
-            if (materia[x] == NULL)
+            if (materia[x] != NULL)
             {
+                delete materia[x];
                 materia[x] = NULL;
-//                materia[x] = copy.materia[x]->clone();
             }
+            materia[x] = copy.getMaterias(x);
         }
     }
     return (*this);
+}
+
+AMateria *Character::getMaterias(int index) const
+{
+    AMateria* copy = NULL;
+    if (materia[index] != NULL)
+        copy = materia[index]->clone();
+    return (copy);
 }
 
 

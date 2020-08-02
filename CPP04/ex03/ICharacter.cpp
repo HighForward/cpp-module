@@ -3,7 +3,7 @@
 
 ICharacter::~ICharacter()
 {
-    std::cout << "Destructor" << std::endl;
+
 }
 
 //ICharacter::ICharacter(const ICharacter &copy)
@@ -14,9 +14,10 @@ ICharacter::~ICharacter()
 //
 ICharacter &ICharacter::operator=(const ICharacter &copy)
 {
-//    std::cout << "Assignation ogfdgfdperator" << std::endl;
+    std::cout << "Assignation ogfdgfdperator" << std::endl;
 //    if (this != &copy)
 //    {
 //    }
 //    return (*this);
+//    AMateria *temp = copy.getMaterias();
 }

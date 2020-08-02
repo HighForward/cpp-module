@@ -15,6 +15,8 @@ class ICharacter
         virtual void equip(AMateria*) = 0;
         virtual void unequip(int idx) = 0;
         virtual void use(int idx, ICharacter& target) = 0;
+        virtual AMateria *getMaterias(int index) const = 0;
+        virtual int getNbMateria() = 0;
     protected:
         std::string _name;
         AMateria *materia[4];

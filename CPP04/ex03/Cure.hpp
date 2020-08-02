@@ -14,9 +14,6 @@ class Cure : public AMateria
         ~Cure();
         virtual AMateria* clone() const;
         virtual void use(ICharacter& target);
-//        Cure(const Cure &copy);
-//        Cure &operator=(const Cure &AMateria);
-
 };
 
 #endif

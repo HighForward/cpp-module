@@ -9,7 +9,11 @@ MateriaSource::MateriaSource()
 
 MateriaSource::~MateriaSource()
 {
-    std::cout << "Destructor" << std::endl;
+    for (int x = 0; x < 4; x++)
+    {
+        if (materia[x] != NULL)
+            delete (materia[x]);
+    }
 }
 
 MateriaSource::MateriaSource(const MateriaSource &copy)
@@ -36,12 +40,14 @@ void MateriaSource::learnMateria(AMateria* tolearn)
         _nbMateria++;
     }
     else
+    {
         std::cout << "Source have already 4 Materia" << std::endl;
+        delete (tolearn);
+    }
 }
 
 AMateria* MateriaSource::createMateria(std::string const &type)
 {
-    const char *str = type.c_str();
     for (int x = 0; x < 4; x++)
     {
         if (materia[x] && strcmp(materia[x]->getType().c_str(), type.c_str()) == 0)

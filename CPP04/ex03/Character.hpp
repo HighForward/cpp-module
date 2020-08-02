@@ -9,12 +9,13 @@ class Character : public ICharacter
 {
     public:
         Character(std::string name);
-        ~Character();
+        virtual ~Character();
         Character(const Character &copy);
-        virtual Character &operator=(const ICharacter &copy);
+        Character &operator=(const ICharacter &copy);
 
         int getNbMateria();
         int getFreeSpace();
+        virtual AMateria *getMaterias(int index) const;
 
         virtual std::string const & getName() const;
         virtual void equip(AMateria*);

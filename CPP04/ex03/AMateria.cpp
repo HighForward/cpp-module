@@ -9,7 +9,7 @@ AMateria::AMateria(std::string const &type)
 
 AMateria::~AMateria()
 {
-    std::cout << "Destructor" << std::endl;
+
 }
 
 AMateria::AMateria(const AMateria &copy)

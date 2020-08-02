@@ -12,7 +12,7 @@ Ice::Ice(std::string const &type) : AMateria(type)
 
 Ice::~Ice()
 {
-    std::cout << "Destructor" << std::endl;
+
 }
 
 

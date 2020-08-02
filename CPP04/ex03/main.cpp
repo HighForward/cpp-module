@@ -33,6 +33,9 @@ int main()
     moi->use(2, *bob);
     moi->use(3, *bob);
 
+    delete src;
+//    delete moi;
+    delete bob;
     std::cout << "\n\n";
 
     AMateria* blop = new Ice("blop");
@@ -40,20 +43,29 @@ int main()
 
     ICharacter* luna = new Character("luna");
 
-    *copy = *blop;
     std::cout << copy->getType() << std::endl;
+    std::cout << blop->getType() << std::endl << std::endl;
 
     luna->equip(blop);
-    std::cout << blop->getType() << std::endl;
+    luna->equip(copy);
     luna->use(0, *moi);
     std::cout << blop->getXP() << std::endl;
     luna->use(0, *moi);
-    std::cout << blop->getXP() << std::endl;
+    std::cout << blop->getXP() << std::endl << std::endl;
 
+    *copy = *blop;
+    std::cout << copy->getType() << std::endl << copy->getXP() << std::endl << std::endl;
 
     ICharacter *max = new Character("max");
-    *max = *luna;
-
     AMateria* zdra = new Cure("zdra");
+
+    max->equip(zdra);
+    std::cout << max->getNbMateria() << std::endl;
+    *max = *luna;
+    std::cout << max->getNbMateria() << std::endl;
+
+    delete moi;
+    delete luna;
+    delete max;
 
 }

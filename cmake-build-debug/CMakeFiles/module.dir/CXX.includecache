@@ -1,0 +1,34 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/user42/Bureau/projects/cpp-module/CPP05/ex01/Bureaucrat.cpp
+Bureaucrat.hpp
+/home/user42/Bureau/projects/cpp-module/CPP05/ex01/Bureaucrat.hpp
+
+/home/user42/Bureau/projects/cpp-module/CPP05/ex01/Bureaucrat.hpp
+iostream
+-
+exception
+-
+
+/home/user42/Bureau/projects/cpp-module/CPP05/ex01/Form.cpp
+Form.hpp
+/home/user42/Bureau/projects/cpp-module/CPP05/ex01/Form.hpp
+
+/home/user42/Bureau/projects/cpp-module/CPP05/ex01/Form.hpp
+iostream
+-
+Bureaucrat.hpp
+/home/user42/Bureau/projects/cpp-module/CPP05/ex01/Bureaucrat.hpp
+
+/home/user42/Bureau/projects/cpp-module/CPP05/ex01/main.cpp
+Bureaucrat.hpp
+/home/user42/Bureau/projects/cpp-module/CPP05/ex01/Bureaucrat.hpp
+Form.hpp
+/home/user42/Bureau/projects/cpp-module/CPP05/ex01/Form.hpp
+

@@ -36,6 +36,7 @@ class Form
         const unsigned int _lvlsign = 50;
         const unsigned int _lvlexec = 100;
 
+        void execute(const Bureaucrat &executor);
 };
 
 std::ostream &operator<<(std::ostream &stream, Form &form);

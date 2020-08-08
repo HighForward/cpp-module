@@ -84,19 +84,7 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/user42/Bureau/projects/cpp-module/CPP05/ex01/Bureaucrat.cpp">
-			<Option target="module"/>
-		</Unit>
-		<Unit filename="/home/user42/Bureau/projects/cpp-module/CPP05/ex01/Bureaucrat.hpp">
-			<Option target="module"/>
-		</Unit>
-		<Unit filename="/home/user42/Bureau/projects/cpp-module/CPP05/ex01/Form.cpp">
-			<Option target="module"/>
-		</Unit>
-		<Unit filename="/home/user42/Bureau/projects/cpp-module/CPP05/ex01/Form.hpp">
-			<Option target="module"/>
-		</Unit>
-		<Unit filename="/home/user42/Bureau/projects/cpp-module/CPP05/ex01/main.cpp">
+		<Unit filename="/home/user42/Bureau/projects/cpp-module/CPP06/ex01/main.cpp">
 			<Option target="module"/>
 		</Unit>
 		<Unit filename="/home/user42/Bureau/projects/cpp-module/CMakeLists.txt">

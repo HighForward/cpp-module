@@ -1,4 +1,5 @@
 #include "ZombieHorde.hpp"
+#include <random>
 
 size_t ZombieHorde::randomize(size_t max, size_t min)
 {

@@ -6,15 +6,14 @@ int main()
     try
     {
         Bureaucrat Burns("Burns", 30);
-        Form Loyer("Loyer");
+        Form Rental("Rental");
 
         std::cout << Burns;
-        std::cout << Loyer;
+        std::cout << Rental;
 //        Loyer.beSigned(Burns);
         Burns.getName();
-        Burns.signForm(Loyer);
-        std::cout << Loyer;
-
+        Burns.signForm(Rental);
+        std::cout << Rental;
 
     }
     catch (std::exception const& e)

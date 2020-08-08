@@ -1,5 +1,7 @@
 #include "Form.hpp"
 #include "Bureaucrat.hpp"
+#include "../ex02/Form.hpp"
+
 
 Form::Form(std::string name) : _name(name), _sign(false)
 {
@@ -53,6 +55,10 @@ void Form::beSigned(Bureaucrat &admin)
         _sign = true;
     else
         throw Form::GradeTooLowException();
+}
+void Form::execute(const Bureaucrat &executor)
+{
+    std::cout << "executor";
 }
 
 const char* Form::GradeTooHighException::what() const throw()

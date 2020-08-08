@@ -6,29 +6,67 @@
 
 #IncludeRegexTransform: 
 
-/home/user42/Bureau/projects/cpp-module/CPP05/ex01/Bureaucrat.cpp
+/home/user42/Bureau/projects/cpp-module/CPP05/ex02/Bureaucrat.cpp
+Form.hpp
+/home/user42/Bureau/projects/cpp-module/CPP05/ex02/Form.hpp
 Bureaucrat.hpp
-/home/user42/Bureau/projects/cpp-module/CPP05/ex01/Bureaucrat.hpp
+/home/user42/Bureau/projects/cpp-module/CPP05/ex02/Bureaucrat.hpp
 
-/home/user42/Bureau/projects/cpp-module/CPP05/ex01/Bureaucrat.hpp
+/home/user42/Bureau/projects/cpp-module/CPP05/ex02/Bureaucrat.hpp
 iostream
 -
 exception
 -
 
-/home/user42/Bureau/projects/cpp-module/CPP05/ex01/Form.cpp
+/home/user42/Bureau/projects/cpp-module/CPP05/ex02/Form.cpp
 Form.hpp
-/home/user42/Bureau/projects/cpp-module/CPP05/ex01/Form.hpp
+/home/user42/Bureau/projects/cpp-module/CPP05/ex02/Form.hpp
+Bureaucrat.hpp
+/home/user42/Bureau/projects/cpp-module/CPP05/ex02/Bureaucrat.hpp
 
-/home/user42/Bureau/projects/cpp-module/CPP05/ex01/Form.hpp
+/home/user42/Bureau/projects/cpp-module/CPP05/ex02/Form.hpp
 iostream
 -
-Bureaucrat.hpp
-/home/user42/Bureau/projects/cpp-module/CPP05/ex01/Bureaucrat.hpp
+exception
+-
 
-/home/user42/Bureau/projects/cpp-module/CPP05/ex01/main.cpp
-Bureaucrat.hpp
-/home/user42/Bureau/projects/cpp-module/CPP05/ex01/Bureaucrat.hpp
+/home/user42/Bureau/projects/cpp-module/CPP05/ex02/PresidentialPardonForm.cpp
+PresidentialPardonForm.hpp
+/home/user42/Bureau/projects/cpp-module/CPP05/ex02/PresidentialPardonForm.hpp
+
+/home/user42/Bureau/projects/cpp-module/CPP05/ex02/PresidentialPardonForm.hpp
+iostream
+-
 Form.hpp
-/home/user42/Bureau/projects/cpp-module/CPP05/ex01/Form.hpp
+/home/user42/Bureau/projects/cpp-module/CPP05/ex02/Form.hpp
+
+/home/user42/Bureau/projects/cpp-module/CPP05/ex02/RobotomyRequestForm.cpp
+RobotomyRequestForm.hpp
+/home/user42/Bureau/projects/cpp-module/CPP05/ex02/RobotomyRequestForm.hpp
+
+/home/user42/Bureau/projects/cpp-module/CPP05/ex02/RobotomyRequestForm.hpp
+iostream
+-
+Form.hpp
+/home/user42/Bureau/projects/cpp-module/CPP05/ex02/Form.hpp
+
+/home/user42/Bureau/projects/cpp-module/CPP05/ex02/ShrubberyCreationForm.cpp
+ShrubberyCreationForm.hpp
+/home/user42/Bureau/projects/cpp-module/CPP05/ex02/ShrubberyCreationForm.hpp
+
+/home/user42/Bureau/projects/cpp-module/CPP05/ex02/ShrubberyCreationForm.hpp
+iostream
+-
+Form.hpp
+/home/user42/Bureau/projects/cpp-module/CPP05/ex02/Form.hpp
+
+/home/user42/Bureau/projects/cpp-module/CPP05/ex02/main.cpp
+Bureaucrat.hpp
+/home/user42/Bureau/projects/cpp-module/CPP05/ex02/Bureaucrat.hpp
+ShrubberyCreationForm.hpp
+/home/user42/Bureau/projects/cpp-module/CPP05/ex02/ShrubberyCreationForm.hpp
+RobotomyRequestForm.hpp
+/home/user42/Bureau/projects/cpp-module/CPP05/ex02/RobotomyRequestForm.hpp
+PresidentialPardonForm.hpp
+/home/user42/Bureau/projects/cpp-module/CPP05/ex02/PresidentialPardonForm.hpp
 

@@ -1,7 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/module.dir/CPP05/ex01/Bureaucrat.cpp.o"
-  "CMakeFiles/module.dir/CPP05/ex01/Form.cpp.o"
-  "CMakeFiles/module.dir/CPP05/ex01/main.cpp.o"
+  "CMakeFiles/module.dir/CPP06/ex01/main.cpp.o"
   "module"
   "module.pdb"
 )

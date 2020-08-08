@@ -123,86 +123,32 @@ module/fast:
 	$(MAKE) -f CMakeFiles/module.dir/build.make CMakeFiles/module.dir/build
 .PHONY : module/fast
 
-CPP05/ex01/Bureaucrat.o: CPP05/ex01/Bureaucrat.cpp.o
+CPP06/ex01/main.o: CPP06/ex01/main.cpp.o
 
-.PHONY : CPP05/ex01/Bureaucrat.o
-
-# target to build an object file
-CPP05/ex01/Bureaucrat.cpp.o:
-	$(MAKE) -f CMakeFiles/module.dir/build.make CMakeFiles/module.dir/CPP05/ex01/Bureaucrat.cpp.o
-.PHONY : CPP05/ex01/Bureaucrat.cpp.o
-
-CPP05/ex01/Bureaucrat.i: CPP05/ex01/Bureaucrat.cpp.i
-
-.PHONY : CPP05/ex01/Bureaucrat.i
-
-# target to preprocess a source file
-CPP05/ex01/Bureaucrat.cpp.i:
-	$(MAKE) -f CMakeFiles/module.dir/build.make CMakeFiles/module.dir/CPP05/ex01/Bureaucrat.cpp.i
-.PHONY : CPP05/ex01/Bureaucrat.cpp.i
-
-CPP05/ex01/Bureaucrat.s: CPP05/ex01/Bureaucrat.cpp.s
-
-.PHONY : CPP05/ex01/Bureaucrat.s
-
-# target to generate assembly for a file
-CPP05/ex01/Bureaucrat.cpp.s:
-	$(MAKE) -f CMakeFiles/module.dir/build.make CMakeFiles/module.dir/CPP05/ex01/Bureaucrat.cpp.s
-.PHONY : CPP05/ex01/Bureaucrat.cpp.s
-
-CPP05/ex01/Form.o: CPP05/ex01/Form.cpp.o
-
-.PHONY : CPP05/ex01/Form.o
+.PHONY : CPP06/ex01/main.o
 
 # target to build an object file
-CPP05/ex01/Form.cpp.o:
-	$(MAKE) -f CMakeFiles/module.dir/build.make CMakeFiles/module.dir/CPP05/ex01/Form.cpp.o
-.PHONY : CPP05/ex01/Form.cpp.o
+CPP06/ex01/main.cpp.o:
+	$(MAKE) -f CMakeFiles/module.dir/build.make CMakeFiles/module.dir/CPP06/ex01/main.cpp.o
+.PHONY : CPP06/ex01/main.cpp.o
 
-CPP05/ex01/Form.i: CPP05/ex01/Form.cpp.i
+CPP06/ex01/main.i: CPP06/ex01/main.cpp.i
 
-.PHONY : CPP05/ex01/Form.i
-
-# target to preprocess a source file
-CPP05/ex01/Form.cpp.i:
-	$(MAKE) -f CMakeFiles/module.dir/build.make CMakeFiles/module.dir/CPP05/ex01/Form.cpp.i
-.PHONY : CPP05/ex01/Form.cpp.i
-
-CPP05/ex01/Form.s: CPP05/ex01/Form.cpp.s
-
-.PHONY : CPP05/ex01/Form.s
-
-# target to generate assembly for a file
-CPP05/ex01/Form.cpp.s:
-	$(MAKE) -f CMakeFiles/module.dir/build.make CMakeFiles/module.dir/CPP05/ex01/Form.cpp.s
-.PHONY : CPP05/ex01/Form.cpp.s
-
-CPP05/ex01/main.o: CPP05/ex01/main.cpp.o
-
-.PHONY : CPP05/ex01/main.o
-
-# target to build an object file
-CPP05/ex01/main.cpp.o:
-	$(MAKE) -f CMakeFiles/module.dir/build.make CMakeFiles/module.dir/CPP05/ex01/main.cpp.o
-.PHONY : CPP05/ex01/main.cpp.o
-
-CPP05/ex01/main.i: CPP05/ex01/main.cpp.i
-
-.PHONY : CPP05/ex01/main.i
+.PHONY : CPP06/ex01/main.i
 
 # target to preprocess a source file
-CPP05/ex01/main.cpp.i:
-	$(MAKE) -f CMakeFiles/module.dir/build.make CMakeFiles/module.dir/CPP05/ex01/main.cpp.i
-.PHONY : CPP05/ex01/main.cpp.i
+CPP06/ex01/main.cpp.i:
+	$(MAKE) -f CMakeFiles/module.dir/build.make CMakeFiles/module.dir/CPP06/ex01/main.cpp.i
+.PHONY : CPP06/ex01/main.cpp.i
 
-CPP05/ex01/main.s: CPP05/ex01/main.cpp.s
+CPP06/ex01/main.s: CPP06/ex01/main.cpp.s
 
-.PHONY : CPP05/ex01/main.s
+.PHONY : CPP06/ex01/main.s
 
 # target to generate assembly for a file
-CPP05/ex01/main.cpp.s:
-	$(MAKE) -f CMakeFiles/module.dir/build.make CMakeFiles/module.dir/CPP05/ex01/main.cpp.s
-.PHONY : CPP05/ex01/main.cpp.s
+CPP06/ex01/main.cpp.s:
+	$(MAKE) -f CMakeFiles/module.dir/build.make CMakeFiles/module.dir/CPP06/ex01/main.cpp.s
+.PHONY : CPP06/ex01/main.cpp.s
 
 # Help Target
 help:
@@ -213,15 +159,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... module"
-	@echo "... CPP05/ex01/Bureaucrat.o"
-	@echo "... CPP05/ex01/Bureaucrat.i"
-	@echo "... CPP05/ex01/Bureaucrat.s"
-	@echo "... CPP05/ex01/Form.o"
-	@echo "... CPP05/ex01/Form.i"
-	@echo "... CPP05/ex01/Form.s"
-	@echo "... CPP05/ex01/main.o"
-	@echo "... CPP05/ex01/main.i"
-	@echo "... CPP05/ex01/main.s"
+	@echo "... CPP06/ex01/main.o"
+	@echo "... CPP06/ex01/main.i"
+	@echo "... CPP06/ex01/main.s"
 .PHONY : help
 
 

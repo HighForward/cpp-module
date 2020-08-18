@@ -84,7 +84,10 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/user42/Bureau/projects/cpp-module/CPP06/ex01/main.cpp">
+		<Unit filename="/home/user42/Bureau/projects/cpp-module/CPP07/ex02/Array.hpp">
+			<Option target="module"/>
+		</Unit>
+		<Unit filename="/home/user42/Bureau/projects/cpp-module/CPP07/ex02/main.cpp">
 			<Option target="module"/>
 		</Unit>
 		<Unit filename="/home/user42/Bureau/projects/cpp-module/CMakeLists.txt">

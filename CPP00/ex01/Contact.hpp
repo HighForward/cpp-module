@@ -1,3 +1,6 @@
+#ifndef CONTACT_HPP
+#define CONTACT_HPP
+
 class Contact
 {
     public:
@@ -12,3 +15,5 @@ class Contact
     /* attributs */
     std::string info[12];
 };
+
+#endif

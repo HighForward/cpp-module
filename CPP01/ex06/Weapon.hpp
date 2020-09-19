@@ -1,5 +1,6 @@
 #ifndef WEAPON_HPP
 #define WEAPON_HPP
+
 #include <string>
 #include <iostream>
 
@@ -15,4 +16,4 @@ private:
 };
 
 
-#endif //CPP01_WEAPON_HPP
+#endif

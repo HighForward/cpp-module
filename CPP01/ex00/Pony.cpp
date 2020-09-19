@@ -2,7 +2,7 @@
 
 Pony::Pony(std::string name)
 {
-    std::cout << name + "created" << std::endl;
+    std::cout << name + " created" << std::endl;
 }
 
 Pony::~Pony()

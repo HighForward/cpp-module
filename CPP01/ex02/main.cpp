@@ -2,17 +2,16 @@
 
 int main(void)
 {
-    Zombie daniel("Daniel", "Boomer");
+    Zombie Alfred("Alfred", "Boomer");
+	Alfred.advert();
 
-    ZombieEvent zombieEvent;
-    zombieEvent.setZombieType("Hunter");
+	ZombieEvent zombieEvent;
+	zombieEvent.setZombieType("Hunter");
 
-    Zombie *denis = zombieEvent.newZombie("Denis");
-    Zombie *random = zombieEvent.randomChump();
+	Zombie Samy = zombieEvent.newZombie("Samy");
+	Samy.advert();
 
-    daniel.advert();
-    denis->advert();
+	Zombie *Random = zombieEvent.randomChump();
 
-    delete denis;
-    delete random;
+    delete Random;
 }

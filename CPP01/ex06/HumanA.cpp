@@ -1,9 +1,9 @@
 #include "HumanA.hpp"
 
-HumanA::HumanA(std::string name, Weapon *weapon)
+HumanA::HumanA(std::string name, Weapon &weapon)
 {
     m_name = name;
-    m_weapon = weapon;
+    m_weapon = &weapon;
 }
 
 void HumanA::attack()

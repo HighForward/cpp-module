@@ -37,9 +37,9 @@ Zombie *ZombieEvent::randomChump()
     return (zombie);
 }
 
-Zombie* ZombieEvent::newZombie(std::string name)
+Zombie ZombieEvent::newZombie(std::string name)
 {
-    Zombie* zombie = new Zombie(name, m_type);
+    Zombie zombie(name, m_type);
     return (zombie);
 }
 

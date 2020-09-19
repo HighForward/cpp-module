@@ -47,7 +47,6 @@ ZombieHorde::ZombieHorde(int n) : m_n(n)
     m_zombie = new Zombie[n];
     while (n--)
         m_zombie[n].name(randomize_name());
-
 }
 
 ZombieHorde::~ZombieHorde()

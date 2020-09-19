@@ -5,18 +5,42 @@
 int main(void)
 {
     Weapon knife;
-    HumanA denis("Denis", &knife);
+    HumanA HumainA("A", knife);
 
     knife.setType("Huntman");
-    denis.attack();
+	HumainA.attack();
     knife.setType("Karambit");
-    denis.attack();
+	HumainA.attack();
 
-    HumanB daniel("Daniel");
+    HumanB HumainB("B");
     Weapon rifle("AK47");
 
-    daniel.setWeapon(&rifle);
-    daniel.attack();
+	HumainB.setWeapon(rifle);
+	HumainB.attack();
     rifle.setType("M4A1");
-    daniel.attack();
+	HumainB.attack();
+
+	std::cout << std::endl;
+
+	{
+		Weapon club = Weapon("Crude spiked club");
+
+		HumanA bob("Bob", club);
+		bob.attack();
+		club.setType("Some other type of club");
+		bob.attack();
+	}
+	{
+		Weapon club = Weapon("Crude spiked club");
+		HumanB jim("Jim");
+		jim.setWeapon(club);
+		jim.attack();
+		club.setType("some other type of club");
+		jim.attack();
+	}
+
+
+
+
+
 }

@@ -1,6 +1,6 @@
 #include "Brain.hpp"
 
-std::string Brain::identify()
+std::string Brain::identify() const
 {
     std::stringstream buffer;
     std::string address;

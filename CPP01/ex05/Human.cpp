@@ -1,21 +1,21 @@
 #include "Human.hpp"
 
-std::string Human::identify()
+std::string Human::identify() const
 {
-    return (brain->identify());
+    return (this->brain.identify());
 }
 
-Brain &Human::getBrain()
+const Brain &Human::getBrain() const
 {
-    return (*brain);
+    return (this->brain);
 }
 
 Human::Human()
 {
-    brain = new Brain();
+
 }
 
 Human::~Human()
 {
-    delete brain;
+
 }

@@ -3,7 +3,8 @@
 
 #include <iostream>
 #include <string>
-#include <random>
+#include <time.h>
+#include <stdlib.h>
 #include "Zombie.hpp"
 
 class ZombieEvent

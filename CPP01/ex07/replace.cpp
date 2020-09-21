@@ -22,7 +22,7 @@ int sed_for_looser(char *cfile, char *s, char *r)
     std::string buffer;
     std::string newfile = std::string(cfile) + std::string(".replace");
     std::ifstream file(cfile);
-    std::ofstream file_replace(newfile);
+    std::ofstream file_replace(newfile.c_str());
 
     if (!(file.is_open()) || !(file_replace.is_open()))
         return (-1);
@@ -34,6 +34,7 @@ int sed_for_looser(char *cfile, char *s, char *r)
     }
     file_replace.close();
     file.close();
+    return (0);
 }
 
 

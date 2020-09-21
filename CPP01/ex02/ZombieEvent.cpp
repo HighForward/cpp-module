@@ -2,9 +2,7 @@
 
 size_t ZombieEvent::randomize(size_t max, size_t min)
 {
-    std::random_device rd;
-
-    size_t rand_nb = rd() % (max - min + 1) + min;
+    size_t rand_nb = rand() % (max - min + 1) + min;
     return (rand_nb);
 }
 
@@ -50,7 +48,7 @@ void ZombieEvent::setZombieType(std::string type)
 
 ZombieEvent::ZombieEvent()
 {
-
+	srand(time(NULL));
 }
 
 ZombieEvent::~ZombieEvent()

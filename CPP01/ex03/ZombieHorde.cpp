@@ -1,12 +1,9 @@
 #include "ZombieHorde.hpp"
-#include <random>
 
 size_t ZombieHorde::randomize(size_t max, size_t min)
 {
-    std::random_device rd;
-
-    size_t rand_nb = rd() % (max - min + 1) + min;
-    return (rand_nb);
+	size_t rand_nb = rand() % (max - min + 1) + min;
+	return (rand_nb);
 }
 
 std::string ZombieHorde::randomize_name()
@@ -44,6 +41,7 @@ void ZombieHorde::announce()
 
 ZombieHorde::ZombieHorde(int n) : m_n(n)
 {
+	srand(time(NULL));
     m_zombie = new Zombie[n];
     while (n--)
         m_zombie[n].name(randomize_name());

@@ -8,5 +8,5 @@ int main(void)
 
     std::cout << *ptr << std::endl;
     std::cout << ref << std::endl;
-    delete &ref;
+    delete ptr;
 }

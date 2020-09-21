@@ -1,7 +1,8 @@
 #ifndef ZOMBIEHORDE_H
 #define ZOMBIEHORDE_H
 
-#include <random>
+#include <time.h>
+#include <stdlib.h>
 #include "Zombie.hpp"
 
 class ZombieHorde {

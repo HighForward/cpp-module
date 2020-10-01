@@ -143,32 +143,59 @@ module/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/module.dir/build.make CMakeFiles/module.dir/build
 .PHONY : module/fast
 
-CPP07/ex02/main.o: CPP07/ex02/main.cpp.o
+CPP02/ex02/Fixed.o: CPP02/ex02/Fixed.cpp.o
 
-.PHONY : CPP07/ex02/main.o
+.PHONY : CPP02/ex02/Fixed.o
 
 # target to build an object file
-CPP07/ex02/main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/module.dir/build.make CMakeFiles/module.dir/CPP07/ex02/main.cpp.o
-.PHONY : CPP07/ex02/main.cpp.o
+CPP02/ex02/Fixed.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/module.dir/build.make CMakeFiles/module.dir/CPP02/ex02/Fixed.cpp.o
+.PHONY : CPP02/ex02/Fixed.cpp.o
 
-CPP07/ex02/main.i: CPP07/ex02/main.cpp.i
+CPP02/ex02/Fixed.i: CPP02/ex02/Fixed.cpp.i
 
-.PHONY : CPP07/ex02/main.i
+.PHONY : CPP02/ex02/Fixed.i
 
 # target to preprocess a source file
-CPP07/ex02/main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/module.dir/build.make CMakeFiles/module.dir/CPP07/ex02/main.cpp.i
-.PHONY : CPP07/ex02/main.cpp.i
+CPP02/ex02/Fixed.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/module.dir/build.make CMakeFiles/module.dir/CPP02/ex02/Fixed.cpp.i
+.PHONY : CPP02/ex02/Fixed.cpp.i
 
-CPP07/ex02/main.s: CPP07/ex02/main.cpp.s
+CPP02/ex02/Fixed.s: CPP02/ex02/Fixed.cpp.s
 
-.PHONY : CPP07/ex02/main.s
+.PHONY : CPP02/ex02/Fixed.s
 
 # target to generate assembly for a file
-CPP07/ex02/main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/module.dir/build.make CMakeFiles/module.dir/CPP07/ex02/main.cpp.s
-.PHONY : CPP07/ex02/main.cpp.s
+CPP02/ex02/Fixed.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/module.dir/build.make CMakeFiles/module.dir/CPP02/ex02/Fixed.cpp.s
+.PHONY : CPP02/ex02/Fixed.cpp.s
+
+CPP02/ex02/main.o: CPP02/ex02/main.cpp.o
+
+.PHONY : CPP02/ex02/main.o
+
+# target to build an object file
+CPP02/ex02/main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/module.dir/build.make CMakeFiles/module.dir/CPP02/ex02/main.cpp.o
+.PHONY : CPP02/ex02/main.cpp.o
+
+CPP02/ex02/main.i: CPP02/ex02/main.cpp.i
+
+.PHONY : CPP02/ex02/main.i
+
+# target to preprocess a source file
+CPP02/ex02/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/module.dir/build.make CMakeFiles/module.dir/CPP02/ex02/main.cpp.i
+.PHONY : CPP02/ex02/main.cpp.i
+
+CPP02/ex02/main.s: CPP02/ex02/main.cpp.s
+
+.PHONY : CPP02/ex02/main.s
+
+# target to generate assembly for a file
+CPP02/ex02/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/module.dir/build.make CMakeFiles/module.dir/CPP02/ex02/main.cpp.s
+.PHONY : CPP02/ex02/main.cpp.s
 
 # Help Target
 help:
@@ -179,9 +206,12 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... module"
-	@echo "... CPP07/ex02/main.o"
-	@echo "... CPP07/ex02/main.i"
-	@echo "... CPP07/ex02/main.s"
+	@echo "... CPP02/ex02/Fixed.o"
+	@echo "... CPP02/ex02/Fixed.i"
+	@echo "... CPP02/ex02/Fixed.s"
+	@echo "... CPP02/ex02/main.o"
+	@echo "... CPP02/ex02/main.i"
+	@echo "... CPP02/ex02/main.s"
 .PHONY : help
 
 

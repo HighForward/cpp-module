@@ -13,34 +13,12 @@ int main(void)
 	HumainA.attack();
 
     HumanB HumainB("B");
-    Weapon rifle("AK47");
+    Weapon *rifle = new Weapon("AK47");
 
 	HumainB.setWeapon(rifle);
 	HumainB.attack();
-    rifle.setType("M4A1");
+    rifle->setType("M4A1");
 	HumainB.attack();
 
 	std::cout << std::endl;
-
-	{
-		Weapon club = Weapon("Crude spiked club");
-
-		HumanA bob("Bob", club);
-		bob.attack();
-		club.setType("Some other type of club");
-		bob.attack();
-	}
-	{
-		Weapon club = Weapon("Crude spiked club");
-		HumanB jim("Jim");
-		jim.setWeapon(club);
-		jim.attack();
-		club.setType("some other type of club");
-		jim.attack();
-	}
-
-
-
-
-
 }

@@ -1,4 +1,8 @@
+#ifndef FRAGTRAP_HPP
+#define FRAGTRAP_HPP
+
 #include <iostream>
+#include <cstdlib>
 
 class FragTrap
 {
@@ -12,14 +16,16 @@ public:
     void vaulthunter_dot_exe(std::string const &target);
 
 private:
-    int hitPts;
-    int maxHitPts;
-    int energyPts;
-    int maxEnergyPts;
-    int Lvl;
+    unsigned int hitPts;
+    unsigned int maxHitPts;
+    unsigned int energyPts;
+	unsigned int maxEnergyPts;
+	unsigned int Lvl;
     std::string name;
-    int meleeDmg;
-    int rangeDmg;
-    int armorReduction;
-    int vaulthunter;
+    unsigned int meleeDmg;
+    unsigned int rangeDmg;
+    unsigned int armorReduction;
+    unsigned int vaulthunter;
 };
+
+#endif

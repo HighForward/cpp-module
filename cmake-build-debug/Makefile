@@ -143,59 +143,194 @@ module/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/module.dir/build.make CMakeFiles/module.dir/build
 .PHONY : module/fast
 
-CPP02/ex02/Fixed.o: CPP02/ex02/Fixed.cpp.o
+CPP03/ex03/NinjaTrap.o: CPP03/ex03/NinjaTrap.cpp.o
 
-.PHONY : CPP02/ex02/Fixed.o
-
-# target to build an object file
-CPP02/ex02/Fixed.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/module.dir/build.make CMakeFiles/module.dir/CPP02/ex02/Fixed.cpp.o
-.PHONY : CPP02/ex02/Fixed.cpp.o
-
-CPP02/ex02/Fixed.i: CPP02/ex02/Fixed.cpp.i
-
-.PHONY : CPP02/ex02/Fixed.i
-
-# target to preprocess a source file
-CPP02/ex02/Fixed.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/module.dir/build.make CMakeFiles/module.dir/CPP02/ex02/Fixed.cpp.i
-.PHONY : CPP02/ex02/Fixed.cpp.i
-
-CPP02/ex02/Fixed.s: CPP02/ex02/Fixed.cpp.s
-
-.PHONY : CPP02/ex02/Fixed.s
-
-# target to generate assembly for a file
-CPP02/ex02/Fixed.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/module.dir/build.make CMakeFiles/module.dir/CPP02/ex02/Fixed.cpp.s
-.PHONY : CPP02/ex02/Fixed.cpp.s
-
-CPP02/ex02/main.o: CPP02/ex02/main.cpp.o
-
-.PHONY : CPP02/ex02/main.o
+.PHONY : CPP03/ex03/NinjaTrap.o
 
 # target to build an object file
-CPP02/ex02/main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/module.dir/build.make CMakeFiles/module.dir/CPP02/ex02/main.cpp.o
-.PHONY : CPP02/ex02/main.cpp.o
+CPP03/ex03/NinjaTrap.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/module.dir/build.make CMakeFiles/module.dir/CPP03/ex03/NinjaTrap.cpp.o
+.PHONY : CPP03/ex03/NinjaTrap.cpp.o
 
-CPP02/ex02/main.i: CPP02/ex02/main.cpp.i
+CPP03/ex03/NinjaTrap.i: CPP03/ex03/NinjaTrap.cpp.i
 
-.PHONY : CPP02/ex02/main.i
+.PHONY : CPP03/ex03/NinjaTrap.i
 
 # target to preprocess a source file
-CPP02/ex02/main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/module.dir/build.make CMakeFiles/module.dir/CPP02/ex02/main.cpp.i
-.PHONY : CPP02/ex02/main.cpp.i
+CPP03/ex03/NinjaTrap.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/module.dir/build.make CMakeFiles/module.dir/CPP03/ex03/NinjaTrap.cpp.i
+.PHONY : CPP03/ex03/NinjaTrap.cpp.i
 
-CPP02/ex02/main.s: CPP02/ex02/main.cpp.s
+CPP03/ex03/NinjaTrap.s: CPP03/ex03/NinjaTrap.cpp.s
 
-.PHONY : CPP02/ex02/main.s
+.PHONY : CPP03/ex03/NinjaTrap.s
 
 # target to generate assembly for a file
-CPP02/ex02/main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/module.dir/build.make CMakeFiles/module.dir/CPP02/ex02/main.cpp.s
-.PHONY : CPP02/ex02/main.cpp.s
+CPP03/ex03/NinjaTrap.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/module.dir/build.make CMakeFiles/module.dir/CPP03/ex03/NinjaTrap.cpp.s
+.PHONY : CPP03/ex03/NinjaTrap.cpp.s
+
+CPP03/ex04/ClapTrap.o: CPP03/ex04/ClapTrap.cpp.o
+
+.PHONY : CPP03/ex04/ClapTrap.o
+
+# target to build an object file
+CPP03/ex04/ClapTrap.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/module.dir/build.make CMakeFiles/module.dir/CPP03/ex04/ClapTrap.cpp.o
+.PHONY : CPP03/ex04/ClapTrap.cpp.o
+
+CPP03/ex04/ClapTrap.i: CPP03/ex04/ClapTrap.cpp.i
+
+.PHONY : CPP03/ex04/ClapTrap.i
+
+# target to preprocess a source file
+CPP03/ex04/ClapTrap.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/module.dir/build.make CMakeFiles/module.dir/CPP03/ex04/ClapTrap.cpp.i
+.PHONY : CPP03/ex04/ClapTrap.cpp.i
+
+CPP03/ex04/ClapTrap.s: CPP03/ex04/ClapTrap.cpp.s
+
+.PHONY : CPP03/ex04/ClapTrap.s
+
+# target to generate assembly for a file
+CPP03/ex04/ClapTrap.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/module.dir/build.make CMakeFiles/module.dir/CPP03/ex04/ClapTrap.cpp.s
+.PHONY : CPP03/ex04/ClapTrap.cpp.s
+
+CPP03/ex04/FragTrap.o: CPP03/ex04/FragTrap.cpp.o
+
+.PHONY : CPP03/ex04/FragTrap.o
+
+# target to build an object file
+CPP03/ex04/FragTrap.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/module.dir/build.make CMakeFiles/module.dir/CPP03/ex04/FragTrap.cpp.o
+.PHONY : CPP03/ex04/FragTrap.cpp.o
+
+CPP03/ex04/FragTrap.i: CPP03/ex04/FragTrap.cpp.i
+
+.PHONY : CPP03/ex04/FragTrap.i
+
+# target to preprocess a source file
+CPP03/ex04/FragTrap.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/module.dir/build.make CMakeFiles/module.dir/CPP03/ex04/FragTrap.cpp.i
+.PHONY : CPP03/ex04/FragTrap.cpp.i
+
+CPP03/ex04/FragTrap.s: CPP03/ex04/FragTrap.cpp.s
+
+.PHONY : CPP03/ex04/FragTrap.s
+
+# target to generate assembly for a file
+CPP03/ex04/FragTrap.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/module.dir/build.make CMakeFiles/module.dir/CPP03/ex04/FragTrap.cpp.s
+.PHONY : CPP03/ex04/FragTrap.cpp.s
+
+CPP03/ex04/NinjaTrap.o: CPP03/ex04/NinjaTrap.cpp.o
+
+.PHONY : CPP03/ex04/NinjaTrap.o
+
+# target to build an object file
+CPP03/ex04/NinjaTrap.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/module.dir/build.make CMakeFiles/module.dir/CPP03/ex04/NinjaTrap.cpp.o
+.PHONY : CPP03/ex04/NinjaTrap.cpp.o
+
+CPP03/ex04/NinjaTrap.i: CPP03/ex04/NinjaTrap.cpp.i
+
+.PHONY : CPP03/ex04/NinjaTrap.i
+
+# target to preprocess a source file
+CPP03/ex04/NinjaTrap.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/module.dir/build.make CMakeFiles/module.dir/CPP03/ex04/NinjaTrap.cpp.i
+.PHONY : CPP03/ex04/NinjaTrap.cpp.i
+
+CPP03/ex04/NinjaTrap.s: CPP03/ex04/NinjaTrap.cpp.s
+
+.PHONY : CPP03/ex04/NinjaTrap.s
+
+# target to generate assembly for a file
+CPP03/ex04/NinjaTrap.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/module.dir/build.make CMakeFiles/module.dir/CPP03/ex04/NinjaTrap.cpp.s
+.PHONY : CPP03/ex04/NinjaTrap.cpp.s
+
+CPP03/ex04/ScavTrap.o: CPP03/ex04/ScavTrap.cpp.o
+
+.PHONY : CPP03/ex04/ScavTrap.o
+
+# target to build an object file
+CPP03/ex04/ScavTrap.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/module.dir/build.make CMakeFiles/module.dir/CPP03/ex04/ScavTrap.cpp.o
+.PHONY : CPP03/ex04/ScavTrap.cpp.o
+
+CPP03/ex04/ScavTrap.i: CPP03/ex04/ScavTrap.cpp.i
+
+.PHONY : CPP03/ex04/ScavTrap.i
+
+# target to preprocess a source file
+CPP03/ex04/ScavTrap.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/module.dir/build.make CMakeFiles/module.dir/CPP03/ex04/ScavTrap.cpp.i
+.PHONY : CPP03/ex04/ScavTrap.cpp.i
+
+CPP03/ex04/ScavTrap.s: CPP03/ex04/ScavTrap.cpp.s
+
+.PHONY : CPP03/ex04/ScavTrap.s
+
+# target to generate assembly for a file
+CPP03/ex04/ScavTrap.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/module.dir/build.make CMakeFiles/module.dir/CPP03/ex04/ScavTrap.cpp.s
+.PHONY : CPP03/ex04/ScavTrap.cpp.s
+
+CPP03/ex04/SuperTrap.o: CPP03/ex04/SuperTrap.cpp.o
+
+.PHONY : CPP03/ex04/SuperTrap.o
+
+# target to build an object file
+CPP03/ex04/SuperTrap.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/module.dir/build.make CMakeFiles/module.dir/CPP03/ex04/SuperTrap.cpp.o
+.PHONY : CPP03/ex04/SuperTrap.cpp.o
+
+CPP03/ex04/SuperTrap.i: CPP03/ex04/SuperTrap.cpp.i
+
+.PHONY : CPP03/ex04/SuperTrap.i
+
+# target to preprocess a source file
+CPP03/ex04/SuperTrap.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/module.dir/build.make CMakeFiles/module.dir/CPP03/ex04/SuperTrap.cpp.i
+.PHONY : CPP03/ex04/SuperTrap.cpp.i
+
+CPP03/ex04/SuperTrap.s: CPP03/ex04/SuperTrap.cpp.s
+
+.PHONY : CPP03/ex04/SuperTrap.s
+
+# target to generate assembly for a file
+CPP03/ex04/SuperTrap.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/module.dir/build.make CMakeFiles/module.dir/CPP03/ex04/SuperTrap.cpp.s
+.PHONY : CPP03/ex04/SuperTrap.cpp.s
+
+CPP03/ex04/main.o: CPP03/ex04/main.cpp.o
+
+.PHONY : CPP03/ex04/main.o
+
+# target to build an object file
+CPP03/ex04/main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/module.dir/build.make CMakeFiles/module.dir/CPP03/ex04/main.cpp.o
+.PHONY : CPP03/ex04/main.cpp.o
+
+CPP03/ex04/main.i: CPP03/ex04/main.cpp.i
+
+.PHONY : CPP03/ex04/main.i
+
+# target to preprocess a source file
+CPP03/ex04/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/module.dir/build.make CMakeFiles/module.dir/CPP03/ex04/main.cpp.i
+.PHONY : CPP03/ex04/main.cpp.i
+
+CPP03/ex04/main.s: CPP03/ex04/main.cpp.s
+
+.PHONY : CPP03/ex04/main.s
+
+# target to generate assembly for a file
+CPP03/ex04/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/module.dir/build.make CMakeFiles/module.dir/CPP03/ex04/main.cpp.s
+.PHONY : CPP03/ex04/main.cpp.s
 
 # Help Target
 help:
@@ -206,12 +341,27 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... module"
-	@echo "... CPP02/ex02/Fixed.o"
-	@echo "... CPP02/ex02/Fixed.i"
-	@echo "... CPP02/ex02/Fixed.s"
-	@echo "... CPP02/ex02/main.o"
-	@echo "... CPP02/ex02/main.i"
-	@echo "... CPP02/ex02/main.s"
+	@echo "... CPP03/ex03/NinjaTrap.o"
+	@echo "... CPP03/ex03/NinjaTrap.i"
+	@echo "... CPP03/ex03/NinjaTrap.s"
+	@echo "... CPP03/ex04/ClapTrap.o"
+	@echo "... CPP03/ex04/ClapTrap.i"
+	@echo "... CPP03/ex04/ClapTrap.s"
+	@echo "... CPP03/ex04/FragTrap.o"
+	@echo "... CPP03/ex04/FragTrap.i"
+	@echo "... CPP03/ex04/FragTrap.s"
+	@echo "... CPP03/ex04/NinjaTrap.o"
+	@echo "... CPP03/ex04/NinjaTrap.i"
+	@echo "... CPP03/ex04/NinjaTrap.s"
+	@echo "... CPP03/ex04/ScavTrap.o"
+	@echo "... CPP03/ex04/ScavTrap.i"
+	@echo "... CPP03/ex04/ScavTrap.s"
+	@echo "... CPP03/ex04/SuperTrap.o"
+	@echo "... CPP03/ex04/SuperTrap.i"
+	@echo "... CPP03/ex04/SuperTrap.s"
+	@echo "... CPP03/ex04/main.o"
+	@echo "... CPP03/ex04/main.i"
+	@echo "... CPP03/ex04/main.s"
 .PHONY : help
 
 

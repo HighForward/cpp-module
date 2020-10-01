@@ -8,9 +8,13 @@ int main(void)
     FragTrap Frag("Maxou");
     ScavTrap Scav("Maxounet");
 
+	std::cout << std::endl;
 
     Frag.vaulthunter_dot_exe("B2oba");
-    Frag.rangedAttack("K2aris");
+    Scav.rangedAttack("K2aris");
+    Frag.getHitPts();
     Frag.takeDamage(55);
     Scav.challengeNewcomer();
+
+    std::cout << std::endl;
 }

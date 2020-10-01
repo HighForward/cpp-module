@@ -2,11 +2,11 @@
 
 int main(void)
 {
-    FragTrap Frag("Franco");
+    FragTrap Frag("Fragito");
 
-    Frag.rangedAttack("Papy Brossard");
-    Frag.meleeAttack("Papy Brossard");
+    Frag.rangedAttack("Papa Johnny");
+    Frag.meleeAttack("Papa Johnny");
     Frag.takeDamage(50);
     Frag.beRepaired(20);
-    Frag.vaulthunter_dot_exe("Papy Brossard");
+    Frag.vaulthunter_dot_exe("Papa Johnny");
 }

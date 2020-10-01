@@ -1,6 +1,11 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/module.dir/CPP02/ex02/Fixed.cpp.o"
-  "CMakeFiles/module.dir/CPP02/ex02/main.cpp.o"
+  "CMakeFiles/module.dir/CPP03/ex03/NinjaTrap.cpp.o"
+  "CMakeFiles/module.dir/CPP03/ex04/ClapTrap.cpp.o"
+  "CMakeFiles/module.dir/CPP03/ex04/FragTrap.cpp.o"
+  "CMakeFiles/module.dir/CPP03/ex04/NinjaTrap.cpp.o"
+  "CMakeFiles/module.dir/CPP03/ex04/ScavTrap.cpp.o"
+  "CMakeFiles/module.dir/CPP03/ex04/SuperTrap.cpp.o"
+  "CMakeFiles/module.dir/CPP03/ex04/main.cpp.o"
   "module"
   "module.pdb"
 )

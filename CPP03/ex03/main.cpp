@@ -10,11 +10,12 @@ int main(void)
     ScavTrap Scav("Maxounet");
     NinjaTrap Ninja("Maximum");
 
-    NinjaTrap NinjaViolent("AuMaxDuMax");
+	std::cout << std::endl;
 
-    std::cout << std::endl << std::endl;
-    NinjaViolent.ninjaShoebox(Frag);
-    NinjaViolent.ninjaShoebox(Scav);
-    NinjaViolent.ninjaShoebox(Ninja);
-    std::cout << std::endl << std::endl;
+	Ninja.ninjaShoebox(Clap);
+	Ninja.ninjaShoebox(Frag);
+	Ninja.ninjaShoebox(Scav);
+	Ninja.ninjaShoebox(Ninja);
+
+    std::cout << std::endl;
 }

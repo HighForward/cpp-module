@@ -1,6 +1,6 @@
 #include "SuperTrap.hpp"
 
-SuperTrap::SuperTrap(std::string name_arg) : FragTrap(name_arg), NinjaTrap(name_arg), ClapTrap(name_arg)
+SuperTrap::SuperTrap(std::string name_arg) : ClapTrap(name_arg), FragTrap(name_arg), NinjaTrap(name_arg)
 {
     name = name_arg;
     hitPts = 100;

@@ -6,12 +6,14 @@
 
 int main(void)
 {
-    NinjaTrap Ninja("Bruce Lee");
+	NinjaTrap Ninja("Bruce Lee");
+	FragTrap Frag("Kim Jong Un");
 
-    SuperTrap Super("Max");
+	std::cout << std::endl << std::endl;
 
-    std::cout << std::endl << std::endl;
-    Super.vaulthunter_dot_exe("TheFantasio974");
-    Super.ninjaShoebox(Ninja);
-    std::cout << std::endl << std::endl;
+	SuperTrap Super("Max");
+	Super.vaulthunter_dot_exe("TheFantasio974");
+	Super.ninjaShoebox(Ninja);
+	
+	std::cout << std::endl << std::endl;
 }

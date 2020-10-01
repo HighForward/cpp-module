@@ -48,3 +48,8 @@ void ClapTrap::beRepaired(unsigned int amount)
         hitPts = hitPts + amount;
     std::cout << "Points de vie : " << hitPts << std::endl;
 }
+
+void ClapTrap::getHitPts(void)
+{
+	std::cout << "Points de vie : " << hitPts << std::endl;
+}

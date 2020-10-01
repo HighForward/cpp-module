@@ -17,7 +17,7 @@ FragTrap::FragTrap(std::string name_arg)
 
 FragTrap::~FragTrap()
 {
-    std::cout << "Destruction automatique kkrkrkrk" << std::endl;
+    std::cout << "kkrkrkrk *blowing up*" << std::endl;
 }
 
 void FragTrap::rangedAttack(std::string const &target)
@@ -55,7 +55,7 @@ void FragTrap::vaulthunter_dot_exe(std::string const &target)
 
     std::string attacks[] = { "Lancer de pieces", "Invocation de Guppy", "PIKKAAAAAACHUUUUUU", "J'apprecie à moitié", "Rien" };
     if (energyPts < 25)
-        std::cout << "Vidange nécessaire" << std::endl;
+        std::cout << "Out of energy =(" << std::endl;
     else
     {
         srand(time(NULL));

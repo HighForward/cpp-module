@@ -31,7 +31,7 @@ void ClapTrap::meleeAttack(std::string const &target)
 
 void ClapTrap::takeDamage(unsigned int amount)
 {
-    std::cout << "Aïe ! dommage subis : " << (amount - armorReduction) << std::endl;
+    std::cout << "Aïe !" << std::endl;
     if ((amount - armorReduction) > hitPts)
         hitPts = 0;
     else
@@ -49,7 +49,12 @@ void ClapTrap::beRepaired(unsigned int amount)
     std::cout << "Points de vie : " << hitPts << std::endl;
 }
 
-std::string ClapTrap::get_name(void)
+void ClapTrap::getHitPts(void)
 {
-    return (name);
+	std::cout << "Points de vie : " << hitPts << std::endl;
+}
+
+std::string ClapTrap::getName()
+{
+	return (name);
 }

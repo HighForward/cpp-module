@@ -1,4 +1,6 @@
 #include "ScavTrap.hpp"
+#include "../ex03/ScavTrap.hpp"
+
 
 ScavTrap::ScavTrap(std::string name_arg)
 {
@@ -21,12 +23,12 @@ ScavTrap::~ScavTrap()
 
 void ScavTrap::rangedAttack(std::string const &target)
 {
-    std::cout << "ScavTrap " << name << " attaque " << target << " à distance, causant " << rangeDmg << " points de dégâts !" << std::endl;
+    std::cout << "ScavTrap " << name << " fait du sale à distance, " << target << " prend " << rangeDmg << " dégâts." << std::endl;
 }
 
 void ScavTrap::meleeAttack(std::string const &target)
 {
-    std::cout << "ScavTrap " << name << " attaque " << target << " à distance, causant " << meleeDmg << " points de dégâts !" << std::endl;
+	std::cout << "ScavTrap " << name << " fait du sale au corp à corp, " << target << " prend " << rangeDmg << " dégâts." << std::endl;
 }
 
 void ScavTrap::takeDamage(unsigned int amount)
@@ -41,7 +43,7 @@ void ScavTrap::takeDamage(unsigned int amount)
 
 void ScavTrap::beRepaired(unsigned int amount)
 {
-    std::cout << "PZIOUUUZUUZZUZIZIZIZI (c'est le bruit quand on me soigne)" << std::endl;
+    std::cout << "PZIOUUUZUUZZUZIZIZIZI (c'est le bruit quand ça répare)" << std::endl;
     if (hitPts + amount > 100)
         hitPts = 100;
     else
@@ -51,7 +53,11 @@ void ScavTrap::beRepaired(unsigned int amount)
 
 void ScavTrap::challengeNewcomer()
 {
-    std::string challenges[] = { "Pile ou face ?", "Shi Fu Mi ?", "Bras de fer ?", "1, 2, 3, ROI DU SILENCE" };
+    std::string challenges[] = { "Pile ou face ?", "Shi Fu Mi ?", "Bras de fer ?", "BlackJack" };
     srand(time(NULL));
     std::cout << "FR4G-TP challenge avec " << challenges[rand() % 4] << std::endl;
+}
+void ScavTrap::getHitPts(void)
+{
+	std::cout << "Points de vie : " << hitPts << std::endl;
 }

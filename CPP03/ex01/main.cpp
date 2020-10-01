@@ -3,22 +3,23 @@
 
 int main(void)
 {
-    ScavTrap Scav("Jammy");
-    FragTrap Frag("Fred");
+    ScavTrap Scav("Diablox9");
+    FragTrap Frag("Fragito");
 
     std::cout << std::endl;
 
-    Scav.rangedAttack("Papy Brossard");
-    Scav.meleeAttack("Papy Brossard");
+    Scav.rangedAttack("The Guys over here");
+    Scav.meleeAttack("The Guys over here");
+    Scav.getHitPts();
     Scav.takeDamage(50);
     Scav.beRepaired(20);
     Scav.challengeNewcomer();
 
     std::cout << std::endl;
 
-    Frag.rangedAttack("Papy Brossard");
-    Frag.meleeAttack("Papy Brossard");
+    Frag.rangedAttack("Papa Johnny");
+    Frag.meleeAttack("Papa Johnny");
     Frag.takeDamage(50);
     Frag.beRepaired(20);
-    Frag.vaulthunter_dot_exe("Papy Brossard");
+    Frag.vaulthunter_dot_exe("Papa Johnny");
 }

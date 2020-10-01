@@ -10,8 +10,8 @@ FragTrap::FragTrap(std::string name_arg) : ClapTrap(name_arg)
     meleeDmg = 30;
     rangeDmg = 20;
     armorReduction = 5;
-    std::cout << "FragTrap: " << name_arg << ": Construction" << std::endl;
     vaulthunter = 50;
+	std::cout << "FragTrap: " << name_arg << ": Construction" << std::endl;
 }
 
 FragTrap::~FragTrap()

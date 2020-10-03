@@ -12,7 +12,6 @@ class SuperMutant : public Enemy
         SuperMutant(const SuperMutant &copy);
         SuperMutant &operator=(const SuperMutant &copy);
         virtual void takeDamage(int value);
-
 };
 
 #endif

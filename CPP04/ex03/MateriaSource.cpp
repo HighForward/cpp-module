@@ -18,17 +18,15 @@ MateriaSource::~MateriaSource()
 
 MateriaSource::MateriaSource(const MateriaSource &copy)
 {
-    std::cout << "Copy constructor" << std::endl;
     *this = copy;
 }
 
 MateriaSource &MateriaSource::operator=(const MateriaSource &copy)
 {
-    std::cout << "Assignation operator" << std::endl;
-    //if (this != &copy)
-    //{
-    //what u want
-    //}
+    if (this != &copy)
+    {
+
+    }
     return (*this);
 }
 
@@ -53,5 +51,5 @@ AMateria* MateriaSource::createMateria(std::string const &type)
         if (materia[x] && strcmp(materia[x]->getType().c_str(), type.c_str()) == 0)
             return (materia[x]->clone());
     }
-
+	return (NULL);
 }

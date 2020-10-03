@@ -5,12 +5,12 @@
 #include "AMateria.hpp"
 #include "ICharacter.hpp"
 
-
 class Cure : public AMateria
 {
     public:
         Cure();
-        Cure(std::string const &type);
+		Cure(const AMateria &copy);
+		Cure& operator=(const Cure &copy);
         ~Cure();
         virtual AMateria* clone() const;
         virtual void use(ICharacter& target);

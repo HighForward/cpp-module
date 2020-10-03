@@ -7,11 +7,7 @@
 class ISquad
 {
     public:
-        ISquad();
         virtual ~ISquad();
-        virtual ISquad &operator=(const ISquad &copy);
-
-
         virtual int getCount() const = 0;
         virtual ISpaceMarine* getUnit(int) const = 0;
         virtual int push(ISpaceMarine*) = 0;

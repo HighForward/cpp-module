@@ -7,65 +7,54 @@
 
 int main()
 {
-    ISpaceMarine *bob = new TacticalMarine;
-    ISpaceMarine *gth = new TacticalMarine;
-    ISpaceMarine *frd = new TacticalMarine;
-    ISpaceMarine *jak = new AssaultTerminator;
-    ISpaceMarine *sxw = new AssaultTerminator;
-    ISpaceMarine *yhj = new AssaultTerminator;
+	ISpaceMarine *tom = new TacticalMarine;
+	ISpaceMarine *max = new AssaultTerminator;
+	ISpaceMarine *tm;
+	Squad test;
 
-    ISquad *vlc = new Squad;
+	test.push(tom);
+	test.push(max);
+	std::cout << test.getCount() << std::endl;
 
-    std::cout << vlc->getCount() << std::endl;
-    vlc->push(bob);
-    vlc->push(gth);
-    vlc->push(frd);
-    vlc->push(jak);
-//    vlc->push(jak);
-    vlc->push(yhj);
-    vlc->push(sxw);
-    std::cout << std::endl << std::endl;
+	tm = test.getUnit(0);
+	tm->battleCry();
+	tm = test.getUnit(1);
+	tm->battleCry();
 
-    for (int i = 0; i < vlc->getCount(); i++)
-    {
-        ISpaceMarine *curr = vlc->getUnit(i);
-        curr->battleCry();
-        curr->rangedAttack();
-        curr->meleeAttack();
-    }
-    std::cout << vlc->getCount() << std::endl << std::endl << std::endl;
+	std::cout << std::endl;
 
-//    ISpaceMarine *zer = sxw->clone();
-//    delete zer;
+	ISpaceMarine *bob = new TacticalMarine;
+	ISpaceMarine *jim = new AssaultTerminator;
 
-    ISquad *copy = new Squad(*vlc);
+	std::cout << std::endl;
 
-    for (int i = 0; i < vlc->getCount(); i++)
-    {
-        ISpaceMarine *cur = copy->getUnit(i);
-        cur->battleCry();
-        cur->rangedAttack();
-        cur->meleeAttack();
-    }
-    std::cout << copy->getCount() << std::endl << std::endl << std::endl;
+	ISquad* vlc = new Squad;
+	vlc->push(bob);
+	vlc->push(jim);
 
-    ISquad *test = new Squad;
-    ISpaceMarine *tm = new TacticalMarine;
-    ISpaceMarine *at = new AssaultTerminator;
-    test->push(tm);
-    test->push(at);
-    *test = *copy;
+	for (int i = 0; i < vlc->getCount(); i++)
+	{
+		ISpaceMarine* cur = vlc->getUnit(i);
+		cur->battleCry();
+		cur->rangedAttack();
+		cur->meleeAttack();
+	}
 
-    for (int i = 0; i < test->getCount(); i++)
-    {
-        ISpaceMarine *currr = test->getUnit(i);
-        currr->battleCry();
-        currr->rangedAttack();
-        currr->meleeAttack();
-    }
-    std::cout << copy->getCount() << std::endl << std::endl << std::endl;
+	std::cout << std::endl;
 
-    delete copy;
-    delete vlc;
-    delete test;
+	ISquad *copy = new Squad(*vlc);
+
+	for (int i = 0; i < copy->getCount(); i++)
+	{
+		ISpaceMarine* temp = copy->getUnit(i);
+		temp->battleCry();
+		temp->rangedAttack();
+		temp->meleeAttack();
+	}
+
+	std::cout << std::endl;
+
+	delete copy;
+	delete vlc;
+
 }

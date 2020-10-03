@@ -10,13 +10,16 @@ class Enemy
         virtual ~Enemy();
         Enemy(const Enemy &copy);
         Enemy &operator=(const Enemy &copy);
-        std::string getType() const;
+
+        std::string const &getType() const;
         int getHP() const;
         virtual void takeDamage(int value);
+        bool isAlive(void);
 
-    protected:
+	private:
         int _hp;
         std::string _type;
+        bool alive;
 
 };
 

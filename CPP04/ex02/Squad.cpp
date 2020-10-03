@@ -2,8 +2,7 @@
 
 Squad::Squad()
 {
-    squad = new ISpaceMarine*[1];
-    squad[0] = NULL;
+	squad = NULL;
 }
 
 Squad::~Squad()
@@ -16,20 +15,12 @@ Squad::~Squad()
 
 Squad::Squad(const ISquad &copy)
 {
-    int x = 0;
-    squad = new ISpaceMarine*[copy.getCount() + 1];
-
-    while (x < copy.getCount())
-    {
-        squad[x] = copy.getUnit(x)->clone();
-        x++;
-    }
-//    *this = copy;
+    *this = copy;
 }
 
 Squad &Squad::operator=(const ISquad &copy)
 {
-    if (this != &copy)
+	if (this != &copy)
     {
         if (this->getCount() > 0)
         {
@@ -37,10 +28,15 @@ Squad &Squad::operator=(const ISquad &copy)
                 delete squad[i];
             delete squad;
         }
-        squad = new ISpaceMarine*[copy.getCount() + 1];
-        for (int x = 0; x < copy.getCount(); x++)
-            squad[x] = copy.getUnit(x)->clone();
-        squad[copy.getCount()] = NULL;
+        if (copy.getCount() > 0)
+		{
+			squad = new ISpaceMarine *[copy.getCount() + 1];
+			for (int x = 0; x < copy.getCount(); x++)
+				squad[x] = copy.getUnit(x)->clone();
+			squad[copy.getCount()] = NULL;
+		}
+        else
+        	squad = NULL;
     }
     return (*this);
 }
@@ -66,11 +62,13 @@ int Squad::push(ISpaceMarine *push)
 {
     ISpaceMarine** tab;
 
+    if (push == NULL)
+    	return (0);
     for (int i = 0; i < getCount(); i++)
     {
         if (squad[i] == push)
         {
-            std::cout << "Aleady in the Squad !" << std::endl;
+            std::cout << "Already in the Squad !" << std::endl;
             return (0);
         }
     }
@@ -79,7 +77,8 @@ int Squad::push(ISpaceMarine *push)
         tab[x] = squad[x];
     tab[getCount()] = push;
     tab[getCount() + 1] = NULL;
-    delete[] squad;
+    if (squad != NULL)
+    	delete[] squad;
     squad = tab;
     return (1);
 }

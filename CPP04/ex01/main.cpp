@@ -8,7 +8,6 @@
 
 int main(void)
 {
-//    AWeapon weapon("", 0, 0);
     Character *moi = new Character("Moi");
 
     std::cout << *moi;
@@ -22,13 +21,46 @@ int main(void)
     std::cout << *moi;
     moi->equip(pf);
 
-    moi->attack(b);
+	std::cout << b->getHP() << std::endl;
+	moi->attack(b);
+	std::cout << b->getHP() << std::endl;
     std::cout << *moi;
-    moi->equip(pr);
-    std::cout << *moi;
-    moi->attack(b);
-    std::cout << *moi;
-    moi->attack(b);
-    std::cout << *moi;
+	moi->equip(pr);
+	std::cout << *moi;
+	moi->attack(b);
+	std::cout << b->getHP() << std::endl;
+	std::cout << *moi;
+	moi->attack(b);
+	std::cout << *moi;
+	Enemy *a = new SuperMutant();
+
+	std::cout << a->getHP() << std::endl;
+	moi->attack(a);
+	moi->attack(a);
+	std::cout << a->getHP() << std::endl;
+	moi->attack(a);
+	moi->attack(a);
+	std::cout << a->getHP() << std::endl;
+	moi->attack(a);
+	moi->attack(a);
+	moi->recoverAP();
+	moi->recoverAP();
+	moi->recoverAP();
+	moi->recoverAP();
+	moi->recoverAP();
+	std::cout << a->getHP() << std::endl;
+	moi->attack(a);
+	moi->attack(a);
+	moi->attack(a);
+	moi->attack(a);
+	moi->attack(a);
+	std::cout << a->getHP() << std::endl;
+	moi->attack(a);
+	moi->attack(a);
+	moi->attack(a);
+
+	delete moi;
+	delete pr;
+	delete pf;
     return 0;
 }

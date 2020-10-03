@@ -9,7 +9,8 @@ class Ice : public AMateria
 {
     public:
         Ice();
-        Ice(std::string const &type);
+		Ice(const AMateria &copy);
+		Ice& operator=(const Ice &copy);
         ~Ice();
         virtual AMateria* clone() const;
         virtual void use(ICharacter& target);

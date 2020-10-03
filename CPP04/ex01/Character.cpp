@@ -14,21 +14,21 @@ Character::~Character()
 
 Character::Character(const Character &copy)
 {
-    std::cout << "Copy constructor" << std::endl;
     *this = copy;
 }
 
 Character &Character::operator=(const Character &copy)
 {
-    std::cout << "Assignation operator" << std::endl;
-    //if (this != &copy)
-    //{
-    //what u want
-    //}
+    if (this != &copy)
+    {
+		this->_name = copy._name;
+		this->_AP = copy._AP;
+		this->_weapon = copy._weapon;
+    }
     return (*this);
 }
 
-std::string Character::getName() const
+std::string const &Character::getName() const
 {
     return (_name);
 }
@@ -42,7 +42,10 @@ void Character::recoverAP()
 {
     _AP += 10;
     if (_AP > 40)
-        _AP = 40;
+	{
+    	std::cout << "FULL OF AP" << std::endl;
+		_AP = 40;
+	}
 }
 
 void Character::equip(AWeapon *weapon)
@@ -65,17 +68,25 @@ int Character::gotWeapon() const
 
 void Character::attack(Enemy *enemy)
 {
-    if (gotWeapon() == 1 && _AP > _weapon->getAPCost())
+	if (enemy == NULL)
+		return ;
+    if (gotWeapon() == 1 && _AP >= _weapon->getAPCost() && enemy->isAlive())
     {
-        _AP = _AP - _weapon->getAPCost();
+        _AP -= _weapon->getAPCost();
         if (_AP < 0)
             _AP = 0;
         std::cout << _name << " attaque " << enemy->getType() << " with a " << _weapon->getName() << std::endl;
         _weapon->attack();
         enemy->takeDamage(_weapon->getDamage());
         if (enemy->getHP() <= 0)
-            delete enemy;
+		{
+			delete enemy;
+		}
     }
+    else if (!enemy->isAlive())
+    	std::cout << enemy->getType() << " is already dead, dont be so mean 0_0" << std::endl;
+    else if (_AP < _weapon->getAPCost())
+ 		std::cout << "AP too low" << std::endl;
 }
 
 std::ostream &operator<<(std::ostream& stream, const Character &overload)

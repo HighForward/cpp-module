@@ -11,7 +11,6 @@ class RadScorpion : public Enemy
         ~RadScorpion();
         RadScorpion(const RadScorpion &copy);
         RadScorpion &operator=(const RadScorpion &copy);
-
 };
 
 #endif

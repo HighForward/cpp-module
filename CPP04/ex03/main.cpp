@@ -9,63 +9,54 @@
 
 int main()
 {
-    IMateriaSource* src = new MateriaSource();
-    src->learnMateria(new Ice());
-    src->learnMateria(new Cure());
-    src->learnMateria(new Ice("freezed cocacola"));
-    src->learnMateria(new Cure("rainbow"));
+	AMateria *ice = new Ice;
+	AMateria *ice2 = new Ice(*ice);
+	AMateria *cure = new Cure(*ice);
+	Character max("Max");
 
-    ICharacter* moi = new Character("moi");
-    AMateria* tmp;
+	std::cout << ice->getType() << std::endl;
+	std::cout << ice2->getType() << std::endl;
+	std::cout << cure->getType() << std::endl;
 
-    tmp = src->createMateria("ice");
-    moi->equip(tmp);
-    tmp = src->createMateria("cure");
-    moi->equip(tmp);
-    tmp = src->createMateria("freezed cocacola");
-    moi->equip(tmp);
-    tmp = src->createMateria("rainbow");
-    moi->equip(tmp);
+	std::cout << ice->getXP() << std::endl << cure->getXP() << std::endl;
+	cure->use(max);
+	*ice = *cure;
+	std::cout << ice->getXP() << std::endl << cure->getXP() << std::endl;
 
-    ICharacter* bob = new Character("bob");
-    moi->use(0, *bob);
-    moi->use(1, *bob);
-    moi->use(2, *bob);
-    moi->use(3, *bob);
+	std::cout << std::endl;
 
-    delete src;
-//    delete moi;
-    delete bob;
-    std::cout << "\n\n";
+	Character johnny("johnny");
 
-    AMateria* blop = new Ice("blop");
-    AMateria* copy = new Ice("copy");
+	std::cout << max.getNbMateria() << std::endl;
+	max.equip(ice);
+	max.equip(cure);
+	max.equip(ice2);
+	std::cout << max.getNbMateria() << std::endl;
+	max.use(0, johnny);
+	max.use(1, johnny);
+	max.use(2, johnny);
 
-    ICharacter* luna = new Character("luna");
+	std::cout << std::endl << std::endl;
 
-    std::cout << copy->getType() << std::endl;
-    std::cout << blop->getType() << std::endl << std::endl;
 
-    luna->equip(blop);
-    luna->equip(copy);
-    luna->use(0, *moi);
-    std::cout << blop->getXP() << std::endl;
-    luna->use(0, *moi);
-    std::cout << blop->getXP() << std::endl << std::endl;
+	IMateriaSource* src = new MateriaSource();
+	src->learnMateria(new Ice());
+	src->learnMateria(new Cure());
 
-    *copy = *blop;
-    std::cout << copy->getType() << std::endl << copy->getXP() << std::endl << std::endl;
+	ICharacter* moi = new Character("Moi");
 
-    ICharacter *max = new Character("max");
-    AMateria* zdra = new Cure("zdra");
+	AMateria* tmp;
 
-    max->equip(zdra);
-    std::cout << max->getNbMateria() << std::endl;
-    *max = *luna;
-    std::cout << max->getNbMateria() << std::endl;
+	tmp = src->createMateria("ice");
+	moi->equip(tmp);
+	tmp = src->createMateria("cure");
+	moi->equip(tmp);
 
-    delete moi;
-    delete luna;
-    delete max;
+	ICharacter* bob = new Character("Bob");
 
+	moi->use(0, *bob);
+	moi->use(1, *bob);
+	delete bob;
+	delete moi;
+	delete src;
 }

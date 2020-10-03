@@ -19,7 +19,9 @@ Sorcerer &Sorcerer::operator=(const Sorcerer &copy)
 {
     if (this != &copy)
     {
-
+		this->name = copy.name;
+		this->title = copy.title;
+		std::cout << this->name << ", " << this->title << ", is born!" << std::endl;
     }
     return (*this);
 }
@@ -30,7 +32,7 @@ std::string Sorcerer::introduce() const
     return (full_string);
 }
 
-void Sorcerer::polymorph(Victim const &victim)
+void Sorcerer::polymorph(Victim const &victim) const
 {
     victim.getPolymorphed();
 }

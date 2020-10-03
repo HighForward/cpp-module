@@ -12,7 +12,7 @@ class Sorcerer
         Sorcerer(const Sorcerer &copy);
         Sorcerer &operator=(const Sorcerer &copy);
         std::string introduce() const;
-        void polymorph(Victim const &victim);
+        void polymorph(Victim const &victim) const;
 
     protected:
         std::string name;

@@ -2,7 +2,7 @@
 
 int main(void)
 {
-    FragTrap Frag("Fragito");
+    FragTrap Frag("Fragilito");
 
     Frag.rangedAttack("Papa Johnny");
     Frag.meleeAttack("Papa Johnny");

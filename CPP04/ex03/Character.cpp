@@ -18,10 +18,11 @@ Character::~Character()
 
 Character::Character(const Character &copy)
 {
-    std::cout << "Copy constructor" << std::endl;
+	for (int x = 0; x < 4; x++)
+		materia[x] = NULL;
     *this = copy;
 }
-//
+
 Character &Character::operator=(const ICharacter &copy)
 {
     if (this != &copy)
@@ -96,7 +97,9 @@ void Character::unequip(int idx)
 void Character::use(int idx, ICharacter& target)
 {
     if (idx < 4 && materia[idx] != NULL)
-        materia[idx]->use(target);
+	{
+		materia[idx]->use(target);
+	}
     else
         std::cout << "there's nothing to use here :/" << std::endl;
 }

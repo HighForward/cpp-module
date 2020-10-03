@@ -14,15 +14,16 @@ AMateria::~AMateria()
 
 AMateria::AMateria(const AMateria &copy)
 {
-    *this = copy;
+	this->_xp = copy.getXP();
+
 }
 
 AMateria &AMateria::operator=(const AMateria &copy)
 {
-    if (this != &copy)
+
+	if (this != &copy)
     {
         this->_xp = copy.getXP();
-        this->_type = copy.getType();
     }
     return (*this);
 }
@@ -37,12 +38,13 @@ unsigned int AMateria::getXP() const
     return (_xp);
 }
 
-void AMateria::use(ICharacter& target)
-{
-
-}
-
 unsigned int AMateria::xpFeeder()
 {
-    return (10);
+	return (10);
+}
+
+void AMateria::use(ICharacter& target)
+{
+	(void)target;
+	_xp += xpFeeder();
 }

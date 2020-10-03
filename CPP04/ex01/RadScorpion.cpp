@@ -12,16 +12,11 @@ RadScorpion::~RadScorpion()
 
 RadScorpion::RadScorpion(const RadScorpion &copy) : Enemy(copy)
 {
-    std::cout << "Copy constructor" << std::endl;
     *this = copy;
 }
 
 RadScorpion &RadScorpion::operator=(const RadScorpion &copy)
 {
-    std::cout << "Assignation operator" << std::endl;
-    //if (this != &copy)
-    //{
-    //what u want
-    //}
+	Enemy::operator=(copy);
     return (*this);
 }

@@ -1,21 +1,20 @@
 #include "Sorcerer.hpp"
 #include "Victim.hpp"
 #include "Peon.hpp"
+#include "Larbin.hpp"
 
 int main(void)
 {
-    Sorcerer Robert("Robert", "The Crazy Sorcerer");
-    Victim Dany("Dany");
-    Peon Jordz("Jordz");
+    Sorcerer robert("Robert", "The Magnificient");
+    Sorcerer johnny(robert);
 
-    std::cout << std::endl;
+	Victim jim("Jim");
+	Peon joe("Joe");
+	Larbin jack("Jack");
 
-    std::cout << Robert << Dany << Jordz;
+	std::cout << robert << jim << joe;
 
-    std::cout << std::endl;
-
-    Robert.polymorph(Dany);
-    Robert.polymorph(Jordz);
-
-    std::cout << std::endl;
+	robert.polymorph(jim);
+	robert.polymorph(joe);
+	robert.polymorph(jack);
 }

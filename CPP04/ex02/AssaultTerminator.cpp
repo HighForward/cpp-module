@@ -12,17 +12,15 @@ AssaultTerminator::~AssaultTerminator()
 
 AssaultTerminator::AssaultTerminator(const AssaultTerminator &copy)
 {
-//    std::cout << "Copy constructor" << std::endl;
     *this = copy;
 }
 
 AssaultTerminator &AssaultTerminator::operator=(const AssaultTerminator &copy)
 {
-//    std::cout << "Assignation operator" << std::endl;
-    //if (this != &copy)
-    //{
-    //what u want
-    //}
+    if (this != &copy)
+    {
+
+    }
     return (*this);
 }
 

@@ -8,6 +8,8 @@ class Victim
     public:
         Victim(std::string _name);
         ~Victim();
+		Victim(const Victim &copy);
+		Victim &operator=(const Victim &copy);
         std::string introduce() const;
         virtual void getPolymorphed() const;
 

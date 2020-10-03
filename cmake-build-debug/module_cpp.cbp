@@ -84,43 +84,49 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/user42/Bureau/projects/cpp-module/CPP03/ex03/NinjaTrap.cpp">
+		<Unit filename="/home/user42/Bureau/projects/cpp-module/CPP04/ex03/AMateria.cpp">
 			<Option target="module"/>
 		</Unit>
-		<Unit filename="/home/user42/Bureau/projects/cpp-module/CPP03/ex03/NinjaTrap.hpp">
+		<Unit filename="/home/user42/Bureau/projects/cpp-module/CPP04/ex03/AMateria.hpp">
 			<Option target="module"/>
 		</Unit>
-		<Unit filename="/home/user42/Bureau/projects/cpp-module/CPP03/ex04/ClapTrap.cpp">
+		<Unit filename="/home/user42/Bureau/projects/cpp-module/CPP04/ex03/Character.cpp">
 			<Option target="module"/>
 		</Unit>
-		<Unit filename="/home/user42/Bureau/projects/cpp-module/CPP03/ex04/ClapTrap.hpp">
+		<Unit filename="/home/user42/Bureau/projects/cpp-module/CPP04/ex03/Character.hpp">
 			<Option target="module"/>
 		</Unit>
-		<Unit filename="/home/user42/Bureau/projects/cpp-module/CPP03/ex04/FragTrap.cpp">
+		<Unit filename="/home/user42/Bureau/projects/cpp-module/CPP04/ex03/Cure.cpp">
 			<Option target="module"/>
 		</Unit>
-		<Unit filename="/home/user42/Bureau/projects/cpp-module/CPP03/ex04/FragTrap.hpp">
+		<Unit filename="/home/user42/Bureau/projects/cpp-module/CPP04/ex03/Cure.hpp">
 			<Option target="module"/>
 		</Unit>
-		<Unit filename="/home/user42/Bureau/projects/cpp-module/CPP03/ex04/NinjaTrap.cpp">
+		<Unit filename="/home/user42/Bureau/projects/cpp-module/CPP04/ex03/ICharacter.cpp">
 			<Option target="module"/>
 		</Unit>
-		<Unit filename="/home/user42/Bureau/projects/cpp-module/CPP03/ex04/NinjaTrap.hpp">
+		<Unit filename="/home/user42/Bureau/projects/cpp-module/CPP04/ex03/ICharacter.hpp">
 			<Option target="module"/>
 		</Unit>
-		<Unit filename="/home/user42/Bureau/projects/cpp-module/CPP03/ex04/ScavTrap.cpp">
+		<Unit filename="/home/user42/Bureau/projects/cpp-module/CPP04/ex03/IMateriaSource.cpp">
 			<Option target="module"/>
 		</Unit>
-		<Unit filename="/home/user42/Bureau/projects/cpp-module/CPP03/ex04/ScavTrap.hpp">
+		<Unit filename="/home/user42/Bureau/projects/cpp-module/CPP04/ex03/IMateriaSource.hpp">
 			<Option target="module"/>
 		</Unit>
-		<Unit filename="/home/user42/Bureau/projects/cpp-module/CPP03/ex04/SuperTrap.cpp">
+		<Unit filename="/home/user42/Bureau/projects/cpp-module/CPP04/ex03/Ice.cpp">
 			<Option target="module"/>
 		</Unit>
-		<Unit filename="/home/user42/Bureau/projects/cpp-module/CPP03/ex04/SuperTrap.hpp">
+		<Unit filename="/home/user42/Bureau/projects/cpp-module/CPP04/ex03/Ice.hpp">
 			<Option target="module"/>
 		</Unit>
-		<Unit filename="/home/user42/Bureau/projects/cpp-module/CPP03/ex04/main.cpp">
+		<Unit filename="/home/user42/Bureau/projects/cpp-module/CPP04/ex03/MateriaSource.cpp">
+			<Option target="module"/>
+		</Unit>
+		<Unit filename="/home/user42/Bureau/projects/cpp-module/CPP04/ex03/MateriaSource.hpp">
+			<Option target="module"/>
+		</Unit>
+		<Unit filename="/home/user42/Bureau/projects/cpp-module/CPP04/ex03/main.cpp">
 			<Option target="module"/>
 		</Unit>
 		<Unit filename="/home/user42/Bureau/projects/cpp-module/CMakeLists.txt">

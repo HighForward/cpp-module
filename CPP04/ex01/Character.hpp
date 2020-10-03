@@ -12,11 +12,13 @@ class Character
         ~Character();
         Character(const Character &copy);
         Character &operator=(const Character &copy);
-        std::string getName() const;
-        int getAP() const;
-        void recoverAP();
-        void equip(AWeapon *weapon);
-        void attack(Enemy *enemy);
+
+		void recoverAP();
+		void equip(AWeapon *weapon);
+		void attack(Enemy *enemy);
+		std::string const &getName() const;
+		int getAP() const;
+
         std::string getWeaponName() const;
         int gotWeapon() const;
 

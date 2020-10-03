@@ -12,5 +12,14 @@ PowerFist::~PowerFist()
 
 void PowerFist::attack() const
 {
-    std::cout << "* Pschhh... SBAM! *" << std::endl;
+    std::cout << "* pschhh... SBAM! *" << std::endl;
+}
+PowerFist::PowerFist(const PowerFist &copy) : AWeapon(copy)
+{
+	*this = copy;
+}
+PowerFist &PowerFist::operator=(const PowerFist &copy)
+{
+	AWeapon::operator=(copy);
+	return (*this);
 }

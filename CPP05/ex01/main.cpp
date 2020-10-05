@@ -5,14 +5,13 @@ int main()
 {
     try
     {
-        Bureaucrat Burns("Burns", 30);
+        Bureaucrat Damn("Burns", 30);
         Form Rental("Rental");
 
-        std::cout << Burns;
+        std::cout << Damn;
         std::cout << Rental;
-//        Loyer.beSigned(Burns);
-        Burns.getName();
-        Burns.signForm(Rental);
+        Damn.getName();
+        Damn.signForm(Rental);
         std::cout << Rental;
 
     }
@@ -20,4 +19,36 @@ int main()
     {
         std::cout << e.what() << std::endl;
     }
+
+	try
+	{
+		Bureaucrat Damn("Burns", 70);
+		Form Rental("Rental");
+
+		std::cout << Damn;
+		std::cout << Rental;
+		Damn.signForm(Rental);
+		std::cout << Rental;
+
+	}
+	catch (std::exception const& e)
+	{
+		std::cout << e.what() << std::endl;
+	}
+
+	try
+	{
+		Bureaucrat Damn("Burns", 50);
+		Form Rental("Rental");
+
+		std::cout << Damn;
+		std::cout << Rental;
+		Rental.beSigned(Damn);
+		std::cout << Rental;
+
+	}
+	catch (std::exception const& e)
+	{
+		std::cout << e.what() << std::endl;
+	}
 }

@@ -4,6 +4,7 @@
 #include <iostream>
 #include <fstream>
 #include "Form.hpp"
+#include "Bureaucrat.hpp"
 
 class ShrubberyCreationForm : public Form
 {

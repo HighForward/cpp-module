@@ -13,24 +13,30 @@ ShrubberyCreationForm::~ShrubberyCreationForm()
 
 ShrubberyCreationForm::ShrubberyCreationForm(const ShrubberyCreationForm &copy) : Form(copy)
 {
-    std::cout << "Copy constructor" << std::endl;
-    *this = copy;
+
 }
 
 ShrubberyCreationForm &ShrubberyCreationForm::operator=(const ShrubberyCreationForm &copy)
 {
-    std::cout << "Assignation operator" << std::endl;
-    //if (this != &copy)
-    //{
-    //what u want
-    //}
+    if (this != &copy)
+    {
+		Form::setSign(copy.getSign());
+		Form::setTarget(copy.getTargetName());
+    }
     return (*this);
 }
 void ShrubberyCreationForm::execute(const Bureaucrat &executor) const
 {
-    Form::execute(executor);
+	if ((unsigned int)executor.getGrade() > getLvlExec())
+	{
+		throw ShrubberyCreationForm::GradeTooLowException();
+	}
+	else if (!getSign())
+	{
+		throw ShrubberyCreationForm::FormNotSignException();
+	}
     std::string filename = "<" + getTargetName() + ">" + "_shrubbery";
-    std::ofstream file(filename);
+    std::ofstream file(filename.c_str());
     if (file.is_open())
     {
         std::cout << filename << " successfully created\n";

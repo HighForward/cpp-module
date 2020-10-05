@@ -1,5 +1,5 @@
-#ifndef CPP_MODULE_FORM_HPP
-#define CPP_MODULE_FORM_HPP
+#ifndef FORM_HPP
+#define FORM_HPP
 
 #include <iostream>
 #include <exception>
@@ -12,6 +12,7 @@ class Form
         ~Form();
         Form(const Form &copy);
         Form &operator=(const Form &copy);
+
         std::string getName() const;
         bool getSign() const;
         unsigned int getLvlSign() const;
@@ -31,12 +32,10 @@ class Form
         };
 
     private:
-        std::string _name;
+        const std::string _name;
         bool _sign;
-        const unsigned int _lvlsign = 50;
-        const unsigned int _lvlexec = 100;
-
-        void execute(const Bureaucrat &executor);
+        static const unsigned int _lvlsign = 50;
+        static const unsigned int _lvlexec = 100;
 };
 
 std::ostream &operator<<(std::ostream &stream, Form &form);

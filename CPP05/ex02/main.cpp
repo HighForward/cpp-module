@@ -1,5 +1,4 @@
 #include "Bureaucrat.hpp"
-#include "Form.hpp"
 #include "ShrubberyCreationForm.hpp"
 #include "RobotomyRequestForm.hpp"
 #include "PresidentialPardonForm.hpp"
@@ -8,28 +7,32 @@ int main()
 {
     try
     {
-        Bureaucrat Burns("Burns", 1);
+        Bureaucrat Jordo("Jordo", 1);
 
         ShrubberyCreationForm Shrubb("Rental");
         RobotomyRequestForm Robotomy("Request");
-        PresidentialPardonForm Pardon("President");
+        PresidentialPardonForm Pardon("Trump");
 
-        Burns.signForm(Shrubb);
-        Burns.signForm(Robotomy);
-        Burns.signForm(Pardon);
+        Jordo.signForm(Shrubb);
+        Jordo.signForm(Robotomy);
+        Jordo.signForm(Pardon);
 
-        Shrubb.execute(Burns);
-        Robotomy.execute(Burns);
-        Pardon.execute(Burns);
+        Shrubb.execute(Jordo);
+        Robotomy.execute(Jordo);
+        Pardon.execute(Jordo);
 
         std::cout << "\n\n";
 
-        Bureaucrat RH("RH", 100);
+        Bureaucrat Johnny("Papa Johnny", 100);
 
-        RH.executeForm(Shrubb);
-        RH.executeForm(Robotomy);
-        RH.executeForm(Pardon);
-    }
+		Johnny.executeForm(Shrubb);
+		Johnny.executeForm(Robotomy);
+		Johnny.executeForm(Pardon);
+
+		ShrubberyCreationForm Shrubb2("Rental");
+
+		Johnny.executeForm(Shrubb2);
+	}
     catch (std::exception const& e)
     {
         std::cout << e.what() << std::endl;

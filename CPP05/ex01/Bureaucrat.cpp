@@ -16,19 +16,21 @@ Bureaucrat::~Bureaucrat()
 
 }
 
-Bureaucrat::Bureaucrat(const Bureaucrat &copy)
+Bureaucrat::Bureaucrat(const Bureaucrat &copy) : _name(copy.getName()), _grade(copy.getGrade())
 {
-    *this = copy;
+	if (getGrade() < 1)
+		throw Bureaucrat::GradeTooHighException();
+	else if (getGrade() > 150)
+		throw Bureaucrat::GradeTooLowException();
 }
 
 Bureaucrat &Bureaucrat::operator=(const Bureaucrat &copy)
 {
-    std::cout << "Assignation operator" << std::endl;
-    //if (this != &copy)
-    //{
-
-    //}
-    return (*this);
+	if (this != &copy)
+	{
+		this->_grade = copy._grade;
+	}
+	return (*this);
 }
 
 const char* Bureaucrat::GradeTooHighException::what() const throw()
@@ -69,7 +71,7 @@ void Bureaucrat::decrement()
 
 void Bureaucrat::signForm(Form &form)
 {
-    if (getGrade() < form.getLvlSign())
+    if ((unsigned int)getGrade() <= form.getLvlSign())
     {
         form.beSigned(*this);
         std::cout << "< " << getName() << " > signs < " << form.getName() << " >\n";
@@ -83,4 +85,5 @@ void Bureaucrat::signForm(Form &form)
 std::ostream &operator<<(std::ostream &stream, const Bureaucrat &obj)
 {
     stream << "< " << obj.getName() << " >, bureaucrat grade < " << obj.getGrade() << " >\n";
+    return (stream);
 }

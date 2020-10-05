@@ -12,11 +12,10 @@ class Bureaucrat
         Bureaucrat(const Bureaucrat &copy);
         Bureaucrat &operator=(const Bureaucrat &copy);
 
-        int getGrade() const;
-        std::string getName() const;
-        void increment();
-        void decrement();
-
+		int getGrade() const;
+		std::string getName() const;
+		void increment();
+		void decrement();
         class GradeTooHighException : public std::exception
         {
             public:

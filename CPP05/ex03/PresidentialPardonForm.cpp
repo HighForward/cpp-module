@@ -1,6 +1,6 @@
 #include "PresidentialPardonForm.hpp"
 
-PresidentialPardonForm::PresidentialPardonForm(const std::string &target) : Form("ShrubberyCreation", 25, 5, target)
+PresidentialPardonForm::PresidentialPardonForm(const std::string &target) : Form("PresidentialPardon", 25, 5, target)
 {
 
 }
@@ -12,21 +12,27 @@ PresidentialPardonForm::~PresidentialPardonForm()
 
 PresidentialPardonForm::PresidentialPardonForm(const PresidentialPardonForm &copy) : Form(copy)
 {
-    std::cout << "Copy constructor" << std::endl;
-    *this = copy;
+
 }
 
 PresidentialPardonForm &PresidentialPardonForm::operator=(const PresidentialPardonForm &copy)
 {
-    std::cout << "Assignation operator" << std::endl;
-    //if (this != &copy)
-    //{
-    //what u want
-    //}
-    return (*this);
+	if (this != &copy)
+	{
+		Form::setSign(copy.getSign());
+		Form::setTarget(copy.getTargetName());
+	}
+	return (*this);
 }
 void PresidentialPardonForm::execute(const Bureaucrat &executor) const
 {
-    Form::execute(executor);
+    if ((unsigned int)executor.getGrade() > getLvlExec())
+    {
+        throw PresidentialPardonForm::GradeTooLowException();
+    }
+    else if (!getSign())
+    {
+        throw PresidentialPardonForm::FormNotSignException();
+    }
     std::cout << "< " << getTargetName() << " > is forgiven by Zafod Beeblebrox\n";
 }

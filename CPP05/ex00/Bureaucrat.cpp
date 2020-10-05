@@ -13,18 +13,20 @@ Bureaucrat::~Bureaucrat()
 
 }
 
-Bureaucrat::Bureaucrat(const Bureaucrat &copy)
+Bureaucrat::Bureaucrat(const Bureaucrat &copy) : _name(copy.getName()), _grade(copy.getGrade())
 {
-    *this = copy;
+	if (getGrade() < 1)
+		throw Bureaucrat::GradeTooHighException();
+	else if (getGrade() > 150)
+		throw Bureaucrat::GradeTooLowException();
 }
 
 Bureaucrat &Bureaucrat::operator=(const Bureaucrat &copy)
 {
-    std::cout << "Assignation operator" << std::endl;
-    //if (this != &copy)
-    //{
-
-    //}
+    if (this != &copy)
+    {
+		this->_grade = copy._grade;
+    }
     return (*this);
 }
 
@@ -53,7 +55,7 @@ void Bureaucrat::increment()
     if (_grade > 1)
         _grade--;
     else
-        throw Bureaucrat::GradeTooLowException();
+        throw Bureaucrat::GradeTooHighException();
 }
 
 void Bureaucrat::decrement()
@@ -61,10 +63,11 @@ void Bureaucrat::decrement()
     if (_grade < 150)
         _grade++;
     else
-        throw Bureaucrat::GradeTooHighException();
+        throw Bureaucrat::GradeTooLowException();
 }
 
 std::ostream &operator<<(std::ostream &stream, const Bureaucrat &obj)
 {
     stream << "< " << obj.getName() << " >, bureaucrat grade < " << obj.getGrade() << " >\n";
+    return (stream);
 }

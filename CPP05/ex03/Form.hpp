@@ -1,5 +1,5 @@
-#ifndef FORM_HPP
-#define FORM_HPP
+#ifndef FORMZ_HPP
+#define FORMZ_HPP
 
 #include <iostream>
 #include <exception>
@@ -9,16 +9,21 @@ class Form
 {
     public:
         Form(std::string name, int lvltosign, int lvltoxec, std::string target);
-        ~Form();
+        virtual ~Form();
         Form(const Form &copy);
         Form &operator=(const Form &copy);
+
         std::string getName() const;
         std::string getTargetName() const;
         bool getSign() const;
         unsigned int getLvlSign() const;
         unsigned int getLvlExec() const;
         void beSigned(Bureaucrat &admin);
-        virtual void execute(Bureaucrat const &executor) const;
+        virtual void execute(Bureaucrat const &executor) const = 0;
+
+        void setTarget(std::string target);
+        void setSign(bool);
+
 
         class GradeTooHighException : public std::exception
         {
@@ -39,10 +44,10 @@ class Form
         };
 
     private:
-        std::string _name;
+        const std::string _name;
         bool _sign;
-        const unsigned int _lvlsign = 50;
-        const unsigned int _lvlexec = 100;
+        const unsigned int _lvlsign;
+        const unsigned int _lvlexec;
         std::string _target;
 
 

@@ -12,21 +12,27 @@ RobotomyRequestForm::~RobotomyRequestForm()
 
 RobotomyRequestForm::RobotomyRequestForm(const RobotomyRequestForm &copy) : Form(copy)
 {
-    std::cout << "Copy constructor" << std::endl;
-    *this = copy;
+
 }
 
 RobotomyRequestForm &RobotomyRequestForm::operator=(const RobotomyRequestForm &copy)
 {
-    std::cout << "Assignation operator" << std::endl;
-    //if (this != &copy)
-    //{
-    //what u want
-    //}
-    return (*this);
+	if (this != &copy)
+	{
+		Form::setSign(copy.getSign());
+		Form::setTarget(copy.getTargetName());
+	}
+	return (*this);
 }
 void RobotomyRequestForm::execute(const Bureaucrat &executor) const
 {
-    Form::execute(executor);
+	if ((unsigned int)executor.getGrade() > getLvlExec())
+	{
+		throw RobotomyRequestForm::GradeTooLowException();
+	}
+	else if (!getSign())
+	{
+		throw RobotomyRequestForm::FormNotSignException();
+	}
     std::cout << "BRRBLLBLBRLBLRLBLBLBLRLBLZZGZGZGZGZ\n< " << getTargetName() << " > successfully robotomized\n";
 }

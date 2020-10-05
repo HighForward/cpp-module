@@ -5,30 +5,24 @@ Form::Form(std::string name, int lvltosign, int lvltoxec, std::string target) : 
 {
 
 }
-std::string Form::getTargetName() const
-{
-    return (_target);
-}
 
 Form::~Form()
 {
 
 }
 
-Form::Form(const Form &copy)
+Form::Form(const Form &copy) : _name(copy.getName()), _sign(copy.getSign()), _lvlsign(copy.getLvlSign()), _lvlexec(copy.getLvlExec()) , _target(copy.getTargetName())
 {
-    std::cout << "Copy constructor" << std::endl;
-    *this = copy;
+
 }
 
 Form &Form::operator=(const Form &copy)
 {
-    std::cout << "Assignation operator" << std::endl;
-    //if (this != &copy)
-    //{
-    //what u want
-    //}
-    return (*this);
+	if (this != &copy)
+	{
+		this->_sign = copy.getSign();
+	}
+	return (*this);
 }
 
 std::string Form::getName() const
@@ -51,24 +45,27 @@ unsigned int Form::getLvlExec() const
     return (_lvlexec);
 }
 
-void Form::beSigned(Bureaucrat &admin)
+std::string Form::getTargetName() const
 {
-    if (admin.getGrade() < getLvlSign())
-        _sign = true;
-    else
-        throw Form::GradeTooLowException();
+	return (_target);
 }
 
-void Form::execute(const Bureaucrat &executor) const
+void Form::setTarget(std::string target)
 {
-    if (executor.getGrade() > getLvlExec())
-    {
-        throw Form::GradeTooLowException();
-    }
-    else if (!getSign())
-    {
-        throw Form::FormNotSignException();
-    }
+	this->_target = target;
+}
+
+void Form::setSign(bool b)
+{
+	this->_sign = b;
+}
+
+void Form::beSigned(Bureaucrat &admin)
+{
+	if ((unsigned int)admin.getGrade() <= getLvlSign())
+		_sign = true;
+	else
+		throw Form::GradeTooLowException();
 }
 
 const char* Form::GradeTooHighException::what() const throw()
@@ -90,4 +87,5 @@ std::ostream &operator<<(std::ostream &stream, Form &form)
     stream << "< " << form.getName() << " > is " << (form.getSign() ? "signed" : "not signed") << "\n"
         << "Lvl required to sign: " << form.getLvlSign() << "\n"
         << "Lvl required to exec: " << form.getLvlExec() << "\n";
+    return (stream);
 }

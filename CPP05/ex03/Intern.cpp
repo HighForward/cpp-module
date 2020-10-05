@@ -12,17 +12,15 @@ Intern::~Intern()
 
 Intern::Intern(const Intern &copy)
 {
-    std::cout << "Copy constructor" << std::endl;
     *this = copy;
 }
 
 Intern &Intern::operator=(const Intern &copy)
 {
-    std::cout << "Assignation operator" << std::endl;
-    //if (this != &copy)
-    //{
-    //what u want
-    //}
+    if (this != &copy)
+    {
+
+    }
     return (*this);
 }
 
@@ -35,27 +33,34 @@ Form *Intern::makeForm(const std::string &formName, const std::string &targetNam
 
     for (int i = 0; i < 3; i++)
     {
-       if  (formType[i].find(formName, 0) != std::string::npos)
-       {
-           Form *nw = (this->*tab[i])(targetName);
-           std::cout << "Intern creates " << nw->getName() << std::endl;
-           return (nw);
-       }
+    	if  (formType[i] == formName)
+    	{
+    		std::cout << formName << std::endl;
+    		return ((this->*tab[i])(targetName));
+    	}
     }
     throw Intern::FormTypeDoNotExist();
 }
+
 Form *Intern::createShrubbery(const std::string &target)
 {
-    return (new ShrubberyCreationForm(target));
+	Form *form = new ShrubberyCreationForm(target);
+    return (form);
 }
+
 Form *Intern::createRobotomy(const std::string &target)
 {
-    return (new RobotomyRequestForm(target));
+	Form *form = new RobotomyRequestForm(target);
+
+    return (form);
 }
+
 Form *Intern::createPresidential(const std::string &target)
 {
-    return (new PresidentialPardonForm(target));
+	Form *form = new PresidentialPardonForm(target);
+    return (form);
 }
+
 const char *Intern::FormTypeDoNotExist::what() const throw()
 {
     return ("ERROR: Form Type Do Not Exists");

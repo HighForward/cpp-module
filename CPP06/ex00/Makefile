@@ -1,24 +1,36 @@
-SRCS		=   main.cpp
+GREEN	= \033[0;32m
+GREEN_B	= \033[1;32m
+RESET	= \033[0m
 
-NAME        =   cast
-FLAGS       =   -Wall -Wextra -Werror
-OBJS		=   $(SRCS:%.cpp=%.o)
-CC			=   clang++
-RM			=   rm -f
-CFLAGS		=   -Wall -Wextra -Werror
+SRCS	=	$(wildcard *.cpp)
 
-$(NAME):	${OBJS}
-			@${CC} ${FLAGS} -o $(NAME) ${OBJS}
-			@printf "\033[1;32m$(NAME) successfully created\033[0;0m"
+OBJS	= $(SRCS:.cpp=.o)
 
-all:		${NAME}
+CC		= clang++
+CFLAGS	= -Wall -Wextra -Werror -std=c++98
+RM		= rm -f
+NAME	= cast
+
+all:		$(NAME)
+
+%.o:		%.cpp
+			@$(CC) $(CFLAGS) -c $< -o $@
+
+$(NAME):	$(OBJS)
+			@$(CC) $(CFLAGS) $^ -o $@
+			@printf "$(GREEN_B)$(NAME) $(GREEN)Created.\033[0;0m\n"
+
 
 clean:
-			@${RM} ${OBJS}
+			@$(RM) $(OBJS)
 
 fclean:		clean
-			@${RM} ${NAME}
+			@$(RM) $(NAME)
 
 re:			fclean all
 
 .PHONY:		all clean fclean re
+
+# $^ = liste des dependance
+# $@ = cible de la règle.
+# $< = première dependance

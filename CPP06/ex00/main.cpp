@@ -2,9 +2,6 @@
 #include <iomanip>
 #include <math.h>
 #include <climits>
-#include <limits>
-#include <iomanip>
-#include <string.h>
 
 void getValueForChar(double d)
 {
@@ -14,7 +11,7 @@ void getValueForChar(double d)
     else if (isnan(d) || isinf(d))
         std::cout << "impossible\n";
     else
-        std::cout << "'" << (char)d << "'" << std::endl;
+        std::cout << "'" << static_cast<char>(d) << "'" << std::endl;
 }
 
 void getValueForInt(double d)
@@ -28,12 +25,14 @@ void getValueForInt(double d)
 
 void getValueForFloat(double d, int precision)
 {
-    std::cout << "float: " << std::setprecision(precision) << std::fixed << static_cast<float>(d) << "f" << std::endl;
+	(void)precision;
+    std::cout << "float: " << std::setprecision(precision)  << std::fixed << static_cast<float>(d) << "f" << std::endl;
 }
 
 void getValueForDouble(double d, int precision)
 {
-    std::cout << "double: " << std::setprecision(precision) << std::fixed << d << std::endl;
+	(void)precision;
+	std::cout << "double: " << std::setprecision(precision) << std::fixed << d << std::endl;
 }
 
 int getPrecision(char *value)
@@ -52,7 +51,7 @@ int getPrecision(char *value)
 
 int main(int argc, char **argv)
 {
-    if (argv[1] == NULL)
+    if (argc != 2)
         return (0);
 
     int precision = getPrecision(argv[1]);
@@ -62,5 +61,4 @@ int main(int argc, char **argv)
     getValueForInt(d);
     getValueForFloat(d, precision);
     getValueForDouble(d, precision);
-    float f;
 }

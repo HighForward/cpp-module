@@ -1,5 +1,5 @@
-#ifndef FORMZ_HPP
-#define FORMZ_HPP
+#ifndef FORM_HPP
+#define FORM_HPP
 
 #include <iostream>
 #include <exception>

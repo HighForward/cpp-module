@@ -24,7 +24,6 @@ Intern &Intern::operator=(const Intern &copy)
     return (*this);
 }
 
-
 Form *Intern::makeForm(const std::string &formName, const std::string &targetName)
 {
 

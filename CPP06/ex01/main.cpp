@@ -1,5 +1,4 @@
 #include <iostream>
-#include <random>
 #include <cstdlib>
 
 typedef struct  Data
@@ -11,9 +10,7 @@ typedef struct  Data
 
 size_t randomize(size_t max, size_t min)
 {
-    std::random_device rd;
-
-    size_t rand_nb = rd() % (max - min + 1) + min;
+    size_t rand_nb = rand() % (max - min + 1) + min;
     return (rand_nb);
 }
 
@@ -28,11 +25,9 @@ std::string randomize_name()
 
 void *serialize(void)
 {
-    std::random_device rd;
-
     Data *data = new Data;
     data->s1 = randomize_name();
-    data->n = rd() % 1000;
+    data->n = rand() % 1000;
     data->s2 = randomize_name();
 
     return (data);
@@ -45,7 +40,8 @@ Data *deserialize(void *raw)
 
 int main()
 {
-    void *ptr = serialize();
+	srand(time(NULL));
+    void *ptr = static_cast<void*>(serialize());
 
     std::cout << ptr << std::endl;
 

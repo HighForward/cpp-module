@@ -77,120 +77,45 @@ include CMakeFiles/module.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/module.dir/flags.make
 
-CMakeFiles/module.dir/CPP05/ex03/Bureaucrat.cpp.o: CMakeFiles/module.dir/flags.make
-CMakeFiles/module.dir/CPP05/ex03/Bureaucrat.cpp.o: ../CPP05/ex03/Bureaucrat.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user42/Bureau/projects/cpp-module/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/module.dir/CPP05/ex03/Bureaucrat.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/module.dir/CPP05/ex03/Bureaucrat.cpp.o -c /home/user42/Bureau/projects/cpp-module/CPP05/ex03/Bureaucrat.cpp
+CMakeFiles/module.dir/CPP08/ex02/MutantStack.cpp.o: CMakeFiles/module.dir/flags.make
+CMakeFiles/module.dir/CPP08/ex02/MutantStack.cpp.o: ../CPP08/ex02/MutantStack.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user42/Bureau/projects/cpp-module/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/module.dir/CPP08/ex02/MutantStack.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/module.dir/CPP08/ex02/MutantStack.cpp.o -c /home/user42/Bureau/projects/cpp-module/CPP08/ex02/MutantStack.cpp
 
-CMakeFiles/module.dir/CPP05/ex03/Bureaucrat.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/module.dir/CPP05/ex03/Bureaucrat.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user42/Bureau/projects/cpp-module/CPP05/ex03/Bureaucrat.cpp > CMakeFiles/module.dir/CPP05/ex03/Bureaucrat.cpp.i
+CMakeFiles/module.dir/CPP08/ex02/MutantStack.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/module.dir/CPP08/ex02/MutantStack.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user42/Bureau/projects/cpp-module/CPP08/ex02/MutantStack.cpp > CMakeFiles/module.dir/CPP08/ex02/MutantStack.cpp.i
 
-CMakeFiles/module.dir/CPP05/ex03/Bureaucrat.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/module.dir/CPP05/ex03/Bureaucrat.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user42/Bureau/projects/cpp-module/CPP05/ex03/Bureaucrat.cpp -o CMakeFiles/module.dir/CPP05/ex03/Bureaucrat.cpp.s
+CMakeFiles/module.dir/CPP08/ex02/MutantStack.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/module.dir/CPP08/ex02/MutantStack.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user42/Bureau/projects/cpp-module/CPP08/ex02/MutantStack.cpp -o CMakeFiles/module.dir/CPP08/ex02/MutantStack.cpp.s
 
-CMakeFiles/module.dir/CPP05/ex03/Form.cpp.o: CMakeFiles/module.dir/flags.make
-CMakeFiles/module.dir/CPP05/ex03/Form.cpp.o: ../CPP05/ex03/Form.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user42/Bureau/projects/cpp-module/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/module.dir/CPP05/ex03/Form.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/module.dir/CPP05/ex03/Form.cpp.o -c /home/user42/Bureau/projects/cpp-module/CPP05/ex03/Form.cpp
+CMakeFiles/module.dir/CPP08/ex02/main.cpp.o: CMakeFiles/module.dir/flags.make
+CMakeFiles/module.dir/CPP08/ex02/main.cpp.o: ../CPP08/ex02/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user42/Bureau/projects/cpp-module/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/module.dir/CPP08/ex02/main.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/module.dir/CPP08/ex02/main.cpp.o -c /home/user42/Bureau/projects/cpp-module/CPP08/ex02/main.cpp
 
-CMakeFiles/module.dir/CPP05/ex03/Form.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/module.dir/CPP05/ex03/Form.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user42/Bureau/projects/cpp-module/CPP05/ex03/Form.cpp > CMakeFiles/module.dir/CPP05/ex03/Form.cpp.i
+CMakeFiles/module.dir/CPP08/ex02/main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/module.dir/CPP08/ex02/main.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user42/Bureau/projects/cpp-module/CPP08/ex02/main.cpp > CMakeFiles/module.dir/CPP08/ex02/main.cpp.i
 
-CMakeFiles/module.dir/CPP05/ex03/Form.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/module.dir/CPP05/ex03/Form.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user42/Bureau/projects/cpp-module/CPP05/ex03/Form.cpp -o CMakeFiles/module.dir/CPP05/ex03/Form.cpp.s
-
-CMakeFiles/module.dir/CPP05/ex03/Intern.cpp.o: CMakeFiles/module.dir/flags.make
-CMakeFiles/module.dir/CPP05/ex03/Intern.cpp.o: ../CPP05/ex03/Intern.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user42/Bureau/projects/cpp-module/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/module.dir/CPP05/ex03/Intern.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/module.dir/CPP05/ex03/Intern.cpp.o -c /home/user42/Bureau/projects/cpp-module/CPP05/ex03/Intern.cpp
-
-CMakeFiles/module.dir/CPP05/ex03/Intern.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/module.dir/CPP05/ex03/Intern.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user42/Bureau/projects/cpp-module/CPP05/ex03/Intern.cpp > CMakeFiles/module.dir/CPP05/ex03/Intern.cpp.i
-
-CMakeFiles/module.dir/CPP05/ex03/Intern.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/module.dir/CPP05/ex03/Intern.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user42/Bureau/projects/cpp-module/CPP05/ex03/Intern.cpp -o CMakeFiles/module.dir/CPP05/ex03/Intern.cpp.s
-
-CMakeFiles/module.dir/CPP05/ex03/PresidentialPardonForm.cpp.o: CMakeFiles/module.dir/flags.make
-CMakeFiles/module.dir/CPP05/ex03/PresidentialPardonForm.cpp.o: ../CPP05/ex03/PresidentialPardonForm.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user42/Bureau/projects/cpp-module/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/module.dir/CPP05/ex03/PresidentialPardonForm.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/module.dir/CPP05/ex03/PresidentialPardonForm.cpp.o -c /home/user42/Bureau/projects/cpp-module/CPP05/ex03/PresidentialPardonForm.cpp
-
-CMakeFiles/module.dir/CPP05/ex03/PresidentialPardonForm.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/module.dir/CPP05/ex03/PresidentialPardonForm.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user42/Bureau/projects/cpp-module/CPP05/ex03/PresidentialPardonForm.cpp > CMakeFiles/module.dir/CPP05/ex03/PresidentialPardonForm.cpp.i
-
-CMakeFiles/module.dir/CPP05/ex03/PresidentialPardonForm.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/module.dir/CPP05/ex03/PresidentialPardonForm.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user42/Bureau/projects/cpp-module/CPP05/ex03/PresidentialPardonForm.cpp -o CMakeFiles/module.dir/CPP05/ex03/PresidentialPardonForm.cpp.s
-
-CMakeFiles/module.dir/CPP05/ex03/RobotomyRequestForm.cpp.o: CMakeFiles/module.dir/flags.make
-CMakeFiles/module.dir/CPP05/ex03/RobotomyRequestForm.cpp.o: ../CPP05/ex03/RobotomyRequestForm.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user42/Bureau/projects/cpp-module/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/module.dir/CPP05/ex03/RobotomyRequestForm.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/module.dir/CPP05/ex03/RobotomyRequestForm.cpp.o -c /home/user42/Bureau/projects/cpp-module/CPP05/ex03/RobotomyRequestForm.cpp
-
-CMakeFiles/module.dir/CPP05/ex03/RobotomyRequestForm.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/module.dir/CPP05/ex03/RobotomyRequestForm.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user42/Bureau/projects/cpp-module/CPP05/ex03/RobotomyRequestForm.cpp > CMakeFiles/module.dir/CPP05/ex03/RobotomyRequestForm.cpp.i
-
-CMakeFiles/module.dir/CPP05/ex03/RobotomyRequestForm.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/module.dir/CPP05/ex03/RobotomyRequestForm.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user42/Bureau/projects/cpp-module/CPP05/ex03/RobotomyRequestForm.cpp -o CMakeFiles/module.dir/CPP05/ex03/RobotomyRequestForm.cpp.s
-
-CMakeFiles/module.dir/CPP05/ex03/ShrubberyCreationForm.cpp.o: CMakeFiles/module.dir/flags.make
-CMakeFiles/module.dir/CPP05/ex03/ShrubberyCreationForm.cpp.o: ../CPP05/ex03/ShrubberyCreationForm.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user42/Bureau/projects/cpp-module/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/module.dir/CPP05/ex03/ShrubberyCreationForm.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/module.dir/CPP05/ex03/ShrubberyCreationForm.cpp.o -c /home/user42/Bureau/projects/cpp-module/CPP05/ex03/ShrubberyCreationForm.cpp
-
-CMakeFiles/module.dir/CPP05/ex03/ShrubberyCreationForm.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/module.dir/CPP05/ex03/ShrubberyCreationForm.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user42/Bureau/projects/cpp-module/CPP05/ex03/ShrubberyCreationForm.cpp > CMakeFiles/module.dir/CPP05/ex03/ShrubberyCreationForm.cpp.i
-
-CMakeFiles/module.dir/CPP05/ex03/ShrubberyCreationForm.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/module.dir/CPP05/ex03/ShrubberyCreationForm.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user42/Bureau/projects/cpp-module/CPP05/ex03/ShrubberyCreationForm.cpp -o CMakeFiles/module.dir/CPP05/ex03/ShrubberyCreationForm.cpp.s
-
-CMakeFiles/module.dir/CPP05/ex03/main.cpp.o: CMakeFiles/module.dir/flags.make
-CMakeFiles/module.dir/CPP05/ex03/main.cpp.o: ../CPP05/ex03/main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user42/Bureau/projects/cpp-module/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/module.dir/CPP05/ex03/main.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/module.dir/CPP05/ex03/main.cpp.o -c /home/user42/Bureau/projects/cpp-module/CPP05/ex03/main.cpp
-
-CMakeFiles/module.dir/CPP05/ex03/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/module.dir/CPP05/ex03/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user42/Bureau/projects/cpp-module/CPP05/ex03/main.cpp > CMakeFiles/module.dir/CPP05/ex03/main.cpp.i
-
-CMakeFiles/module.dir/CPP05/ex03/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/module.dir/CPP05/ex03/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user42/Bureau/projects/cpp-module/CPP05/ex03/main.cpp -o CMakeFiles/module.dir/CPP05/ex03/main.cpp.s
+CMakeFiles/module.dir/CPP08/ex02/main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/module.dir/CPP08/ex02/main.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user42/Bureau/projects/cpp-module/CPP08/ex02/main.cpp -o CMakeFiles/module.dir/CPP08/ex02/main.cpp.s
 
 # Object files for target module
 module_OBJECTS = \
-"CMakeFiles/module.dir/CPP05/ex03/Bureaucrat.cpp.o" \
-"CMakeFiles/module.dir/CPP05/ex03/Form.cpp.o" \
-"CMakeFiles/module.dir/CPP05/ex03/Intern.cpp.o" \
-"CMakeFiles/module.dir/CPP05/ex03/PresidentialPardonForm.cpp.o" \
-"CMakeFiles/module.dir/CPP05/ex03/RobotomyRequestForm.cpp.o" \
-"CMakeFiles/module.dir/CPP05/ex03/ShrubberyCreationForm.cpp.o" \
-"CMakeFiles/module.dir/CPP05/ex03/main.cpp.o"
+"CMakeFiles/module.dir/CPP08/ex02/MutantStack.cpp.o" \
+"CMakeFiles/module.dir/CPP08/ex02/main.cpp.o"
 
 # External object files for target module
 module_EXTERNAL_OBJECTS =
 
-module: CMakeFiles/module.dir/CPP05/ex03/Bureaucrat.cpp.o
-module: CMakeFiles/module.dir/CPP05/ex03/Form.cpp.o
-module: CMakeFiles/module.dir/CPP05/ex03/Intern.cpp.o
-module: CMakeFiles/module.dir/CPP05/ex03/PresidentialPardonForm.cpp.o
-module: CMakeFiles/module.dir/CPP05/ex03/RobotomyRequestForm.cpp.o
-module: CMakeFiles/module.dir/CPP05/ex03/ShrubberyCreationForm.cpp.o
-module: CMakeFiles/module.dir/CPP05/ex03/main.cpp.o
+module: CMakeFiles/module.dir/CPP08/ex02/MutantStack.cpp.o
+module: CMakeFiles/module.dir/CPP08/ex02/main.cpp.o
 module: CMakeFiles/module.dir/build.make
 module: CMakeFiles/module.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/user42/Bureau/projects/cpp-module/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable module"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/user42/Bureau/projects/cpp-module/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable module"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/module.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
